@@ -1,0 +1,814 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Management - Aluda Pharmaceuticals, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+<link rel="prefetch" href="/company/background-full.jpg" />
+<link rel="prefetch" href="/company/background-tall.jpg" />
+<link rel="prefetch" href="/company/x.svg" />
+<link rel="prefetch" href="/company/linkedin.svg" />
+<link rel="prefetch" href="/logo.svg" />
+<link rel="prefetch" href="background.jpg" />
+<style>
+*, html {
+scroll-behavior: smooth !important;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#logo img {
+  height: 90px;
+  transition: height 0.25s;
+}
+.shrink #logo img {
+  height: 70px;
+}
+a, a:visited, a:active {
+	color: #0c2f74;
+}
+.wrapper {
+	margin: auto;
+	min-width: 1045px;
+	max-width: 1125px;
+  max-width: 1600px;
+}
+#header {
+	padding: 26px 9px 26px 9px;
+  transition: padding 0.25s;
+}
+.shrink #header {
+	padding: 16px 9px 16px 9px;
+}
+#header-outer {
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+#header-placeholder {
+  width: 100%;
+  height: 142px;
+}
+#header-hamburger-wrapper {
+  display: none;
+}
+#footer {
+	background: #0c2f74;
+/*	width: max-content;*/
+	color: #bbc7e0;
+	font-size: 18px;
+}
+#footer .inner {
+  padding: 26px 9px 26px 9px;
+}
+#footer a {
+	color: inherit;
+}
+#social-buttons {
+  float: right;
+}
+#social-buttons img {
+  padding: 8px;
+  width: 48px;
+  opacity: 0.8;
+}
+#social-buttons img:hover {
+  opacity: 1.0;
+}
+#navigation {
+	float: right;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+  
+  transition: height 0.25s, line-height 0.25s;
+}
+.shrink #navigation {
+	height: 70px;
+	line-height: 70px;
+}
+#navigation * {
+  margin: 0;
+}
+.navigation-item {
+  position: relative;
+  display: inline-block;
+	font-size: 27px;
+	font-weight: 600;
+	color: #0c2f74;
+	margin: 0 3px 0 3px;
+}
+.navigation-item a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation-item a.item {
+	padding: 9px 14px 9px 14px;
+	border-radius: 4px;
+}
+.navigation-item .navigation-wrapper:hover a.item, .navigation-item a.item:hover, .navigation-item a.item:active,
+.navigation-item .navigation-wrapper .navigation-dropdown a:hover,
+.navigation-item .navigation-wrapper .navigation-dropdown a:active{
+	background: #0c2f74;
+	color: white;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+.navigation-item .navigation-wrapper:hover .navigation-dropdown {
+  display: block;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.navigation-item .navigation-wrapper .navigation-dropdown {
+  display: none;
+  background: white;
+  border: 2px solid #0c2f74;
+  line-height: 44px;
+  padding: 8px 0px 8px 0px;
+  position: absolute;
+  z-index: 10;
+  top: 68px;
+  left: 0px;
+  min-width: 225px;
+  transition: top 0.25s;
+}
+.shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+  top: 58px;
+}
+.navigation-item .navigation-wrapper .navigation-dropdown a {
+  display: block;
+  background: transparent;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 4px 14px 4px 14px;
+  color: #0c2f74;
+  white-space: nowrap;
+}
+.subsection .arrow::before {
+    content:'-\00a0\00a0\00a0\00a0'
+}
+.subsection.selected .arrow::before {
+    content:'›\00a0\00a0\00a0\00a0'
+}
+/*.navigation-item .navigation-wrapper .navigation-dropdown a::before {
+  content: "-\a0\a0\a0 ";
+}*/
+#location-bar {
+	clear: both;
+	background: #0c2f74;
+	/*width: max-content;*/
+	color: white;
+	font-size: 20px;
+}
+#location-bar.index-page, #location-bar {
+  /*background-image: url('/company/background.jpg');*/
+  background-repeat: no-repeat;
+  background-color: #0c2f74;
+  box-shadow: inset 0px 10px 15px -15px #0c2f74;;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  height: 300px;
+  background-image: url('background.jpg');
+  transition: background-position 0.5s;
+}
+.shrink #location-bar.index-page, .shrink #location-bar{
+  background-position: 50%  calc(50% + 20px);
+}
+#location-bar .wrapper > .inner {
+	padding: 8px 9px 9px 9px;
+}
+#location-bar.index-page .inner, #location-bar .wrapper > .inner {
+  padding-top: 225px;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #0c2f74;
+  line-clamp: 1;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#location-bar a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+}
+#location-bar a:hover {
+	text-decoration: underline;
+}
+h1 {
+	color: #0c2f74;
+	font-weight: bold;
+	font-size: 30px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-left: -2px;
+    line-height: 1.2em;
+    scroll-padding-top: 10px;
+}
+h2 {
+  color: #0c2f74;
+	font-weight: bold;
+	font-size: 26px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    scroll-padding-top: 10px;
+}
+h3 {
+  color: #0c2f74;
+  scroll-padding-top: 10px;
+}
+#content {
+	margin-right: 300px;
+	padding-left: 9px;
+	padding-right: 18px;
+	padding-bottom: 1px;
+	margin-bottom: 18px;
+	border-right: 2px solid #0c2f74;
+	min-height: 600px;
+}
+#content img, #content svg {
+	max-width: 100%;
+  height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content, #content p {
+	font-size: 19px;
+	line-height: 1.4em;
+	/* line-height: 1.6em; */
+}
+#content .pageurl {
+  display: none;
+}
+/*.hide-navigation #content-sidebar {
+  display: none;
+}
+.hide-navigation #content {
+  border-right: none;
+}*/
+.hide-navigation #content-sidebar .section {
+  display: none;
+}
+.hide-navigation #content-sidebar {
+  margin-top: -10px;
+}
+#content .clear {
+	clear: both;
+	margin: 64px;
+}
+#content-sidebar {
+	width: 270px;
+	min-height: 400px;
+	float: right;
+	color: #0c2f74;
+	line-height: 1.8em;
+  margin-right: 9px;
+}
+#content-sidebar a {
+	color: inherit;
+	text-decoration: none;
+}
+#content-sidebar a:hover {
+	text-decoration: underline;
+}
+#content-sidebar .section {
+  padding-top: 10px;
+	font-size: 26px;
+	font-weight: bold;
+}
+#content-sidebar .subsection {
+	font-size: 22px;
+	padding-left: 25px ;
+	text-indent: -25px ;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+#content-sidebar .subsection.selected {
+  font-weight: 600;
+}
+#content-sidebar-inner {
+  width: 270px;
+}
+#content-sidebar-inner.fixed {
+  position: fixed;
+}
+#content-sidebar .subsection .arrow {
+}
+
+
+.modal-box.hide{
+  display: none;
+}
+.modal-box.active{
+  display: block !important;
+  border: 2px solid #0c2f74;
+    padding: 16px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow-y: scroll;
+    z-index: 200;
+}
+.modal-box .close {
+  display: none;
+}
+.modal-box.active .close{
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  text-decoration: none;
+}
+.modal-box h1 {
+  margin-top: 0px;
+}
+
+/*@media only screen and (max-width: 1000px) {
+  #logo {
+    display: block;
+  }
+  #navigation {
+    float: none;
+    text-align: center;
+  }
+  .navigation-item {
+    font-size: 20px !important;
+  }
+}*/
+@media only screen and (max-width: 1200px) {
+  #logo img {
+    height: 75px;
+  }
+  .shrink #logo img {
+    height: 60px;
+  }
+  #navigation {
+    height: 75px;
+    line-height: 75px;
+  }
+  #header-placeholder {
+    height: 127px;
+  }
+  .shrink #navigation {
+    height: 60px;
+    line-height: 60px;
+  }
+  .navigation-item {
+    font-size: 24px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown {
+    line-height: 48px;
+    top: 58px;
+    min-width: 250px;
+  }
+  .shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+    top: 53px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown a {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 4px 16px 4px 16px;
+  }
+  .wrapper {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1250px;
+  }
+  #content, #location-bar .wrapper > .inner, #header, #footer .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #content-sidebar {
+    line-height: 1.8em;
+    margin-right: 24px;
+    width: 255px;
+  }
+  #content-sidebar .section {
+    font-size: 22px;
+  }
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {/*was 768*/
+  body {
+  }
+  #logo {
+    transition: padding 0.5s;
+  }
+  #logo img{
+  	height: 60px;
+  }
+  .shrink #logo img {
+  	height: 50px;
+  }
+  .shrink #logo {
+    padding: 10px;
+  }
+  .wrapper {
+  	min-width: 0;
+  	max-width: none;
+  }
+  #header-outer {
+    /* position: static; */
+  }
+  #header-placeholder {
+    height: 100px;
+  }
+  #header, .shrink #header {
+  	padding: 0;
+  }
+  #header-hamburger-wrapper {
+    display: block;
+    float: right;
+  }
+  #header-hamburger {
+    display: block;
+    border: 1px solid #0c2f74;
+    padding: 9px 14px 9px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    height: 28px;
+    margin: 5px;
+    transition: margin 0.5s;
+  }
+  .shrink #header-hamburger {
+    margin: 0;
+  }
+  #header-hamburger:hover, .menu-open #header-hamburger {
+    background: #0c2f74;
+    color: #ffffff;
+  }
+  #navigation {
+    display: none;
+  }
+  .menu-open #navigation {
+    display: block;
+  }
+  #footer {
+    font-size: 18px;
+  }
+  #footer .inner {
+    padding: 20px 24px 20px 24px;
+  }
+#social-buttons img {
+  padding: 8px;
+  width: 32px;
+}
+  #logo {
+  	display: block;
+  	padding: 20px;
+  }
+  #navigation, .shrink #navigation {
+  	float: none;
+  	height: auto;
+  	line-height: inherit;
+    margin-bottom: 10px;
+  }
+  #navigation .navigation-item {
+  	/*padding: 4px 0 4px 0;*/
+  	font-size: 20px;
+    text-align: center;
+  }
+  .hide-navigation #content-sidebar {
+    margin-top: 0;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown,
+  .navigation-item .navigation-wrapper:hover .navigation-dropdown {
+    display: none !important;
+  }
+  #navigation .navigation-item a.item {
+  border-top: 1px solid #0c2f74;
+    display: block;
+    border-radius: 0;
+    padding: 10px;
+  }
+  #navigation .navigation-item {
+    display: block;
+  }
+  #navigation .navigation-item:last-child a.item {
+    border-bottom: 1px solid #0c2f74;
+  }
+  #location-bar {
+    font-size: 20px;
+  }
+  #content-sidebar {
+    width: auto;
+  	float: none;
+  	line-height: 1.8em;
+  	min-height: 0px;
+  	padding: 10px 10px 10px 10px;
+  	border-bottom: 1px solid #0c2f74;
+    margin-right: 0 !important;
+  }
+  #content-sidebar .section {
+  	display: none;
+  }
+  #content-sidebar .subsection {
+  	font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #content-sidebar-inner {
+      width: auto;
+  }
+  #content-sidebar-inner.fixed {
+    position: static;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+  }
+  #content, #content p {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+  #location-bar.index-page, #location-bar {
+    height: 200px;
+  }
+  #location-bar.index-page > .wrapper > .inner, #location-bar > .wrapper >  .inner {
+    padding-top: 140px;
+    font-size: 32px;
+  }
+  #location-bar {
+		/* padding-top: 0 !important; */
+		/* margin-top: 0 !important; */
+    /* background-position: 50% 50% !important; */
+  }
+}
+@media print {
+  #navigation {
+    display: none;
+  }
+#header-outer {
+  position: static;
+}
+
+  #location-bar, #footer {
+    background: white;
+    color: black;
+  }
+  #location-bar {
+    display: none;
+  }
+  #header {
+    padding: 10px;
+  }
+
+  #footer .inner {
+    padding: 10px;
+  }
+
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+    border-bottom: 2px solid black;
+  }
+
+  #content a, #content a:visited {
+    color: black;
+  }
+
+  #content img, #content svg {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  #content .pageurl {
+    display: block;
+    font-style: italic;
+  }
+
+  #content-sidebar {
+    color: black;
+    width: auto;
+    float: none;
+    line-height: 1.5em;
+    min-height: 0px;
+    padding: 10px 10px 10px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  #content-sidebar .section {
+    font-size: 24px;
+  }
+
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+#content-sidebar-inner.fixed {
+  position: static;
+}
+
+  h1 {
+    color: black;
+  }
+}
+</style>
+<script>
+function update() {
+var e = document.getElementById('content-sidebar');
+var f = document.getElementById('content-sidebar-inner');
+var r = e.getBoundingClientRect();
+if (r.top < 120.0) {
+f.classList.add('fixed');
+f.style.top = 120.0;
+} else {
+  f.classList.remove('fixed');
+}
+
+}
+window.addEventListener('scroll', update);
+window.addEventListener('resize', update);
+function update2() {
+var e = document.body;
+if (document.body.scrollTop > 100) {
+  e.classList.add('shrink');
+} else {
+  e.classList.remove('shrink');
+}
+
+}
+window.addEventListener('scroll', update2);
+window.addEventListener('resize', update2);
+</script>
+</head>
+<body>
+<div id="header-placeholder">
+<div id="header-outer">
+<div class="wrapper">
+	<div id="header">
+		<span id="logo">
+			<a href = "/"><img src="/logo.svg" alt="Aluda Pharmaceuticals, Inc." /></a>
+      <div id="header-hamburger-wrapper">
+        <div id="header-hamburger" onclick="document.body.classList.toggle('menu-open')">
+          &#x2630;
+        </div>
+      </div>
+		</span>
+		<div id="navigation">
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/">Company</a>
+          <div class = "navigation-dropdown">
+            <a href = "/">Overview</a>
+            <a href = "/company/news.html">News</a>
+            <a href = "/company/team.html">Management</a>
+            <a href = "/company/careers.html">Careers</a>
+          </div>
+        </span>
+      </span>
+      <span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/science">Science</a>
+            <div class = "navigation-dropdown">
+              <a href = "/science/vimentin.html">Vimentin</a>
+              <a href = "/science/stat3.html">STAT3</a>
+              <a href = "/science/publications.html">Aluda Publications</a>
+            </div>
+        </span>
+      </span>
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/pipeline">Pipeline</a>
+        </span>
+      </span>
+			<span class="navigation-item"><a class="item" href="/partnering">Partnering</a></span>
+			<span class="navigation-item"><a class="item" href="/contact">Contact</a></span>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div id="location-bar" class="bar">
+	<div class="wrapper">
+		<div class = "inner">
+			<a href = "/company">Company</a> &nbsp;&rsaquo;&nbsp; <a href = "/company/team.html">Management</a>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="content-sidebar">
+		<div id = "content-sidebar-inner">
+			<div class = "section">Company</div><div class = "subsection"><span class = "arrow"></span><a href = "/index.html">Overview</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/company/news.html">News</a></div><div class = "subsection selected"><span class = "arrow"></span><a href = "/company/team.html#">Management</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/company/careers.html">Careers</a></div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Management</h1>
+		<h2>Ruihuan Chen, Ph.D., Founder and CEO</h2>
+<p>Dr. Chen is a passionate scientist-turned entrepreneur and brings extensive drug discovery experience within multiple blockbuster category drugs. His multidisciplinary training in pharmacology, biochemistry, molecular biology and molecular medicine provides exceptional vision for Aluda.</p>
+<p>During his early career in academia in Beijing, Paris and New York, Dr. Chen worked on novel small molecule anti-cancer drugs and the mammary production of therapeutic proteins. He co-founded Natrogen (acquired by Takeda) and managed their autoimmune program from discovery to Phase II including a successful Ph 2. At Genentech, Dr. Chen focused on the discovery of therapeutic targets for cancer, and was a key contributor to the understanding of molecular signature of glioblastomas and signaling pathways involved in tumor growth. He designed and executed experiments to analyze the lineage hierarchy of cancer stem cells and to determine the roles of tumor microenvironment and metabolism in tumorigenesis. He produced several high-impact peer-reviewed publications.</p>
+<p>Dr. Chen received his B.Sc. in pharmacology from Fudan University, a M.Sc. in biochemistry from Beijing Normal University, and his Ph.D. in Molecular Biology and Genetics from University of Paris. He completed post-doctoral work at Mt. Sinai School of Medicine.</p>
+
+<h2>Lian Mo, M.D., Founder and Chief Medical Officer</h2>
+<p>	Dr. Mo worked as a physician in one of the leading hospitals in China, where she was frustrated by the lack of effective treatments available for so many of the severe diseases she was treating. This frustration led to a transition from clinical practice to scientific and translational research, where she spent 6 years in postdoctoral roles studying clinical immunology and eventually joined the pharmaceutical industry. Her research produced several peer-reviewed publications in immunology and oncology and subsequently a drug candidate that completed a successful Phase II in Inflammatory Bowel Disease. In her role as CMO for Aluda, she brings knowledge and experience in drug development through proof of concept in the clinic, as well as a sense of urgency as a treating physician.
+</p>
+
+<h2>Deebie Symmes, BS, MBA, Founder and COO</h2>
+<p>Ms. Symmes brings extensive experience and strategy to corporate development and partnering, having originated, negotiated, and closed over 50 licensing transactions in all stages from discovery through Phase 2. She held senior full time roles at Ciba Corning Diagnostics, Chiron, Tularik and ARYx where she negotiated and closed a segment-leading, IPO-enabling licensing deal worth $575 million. Ms. Symmes has been a strategy and market analysis consultant at Keelin Reeds and held corporate development roles at multiple start ups with advanced biology platforms, leading corporate development,  negotiations, and post-deal alliance management.  She has exceptionally broad therapeutic area deal experience spanning CNS, GI, cardiovascular, inflammation, and oncology.  Earlier in her career, she managed a global corporate planning process for a multi-national company.</p>
+<p>Ms. Symmes holds an M.B.A. from The Wharton School and a biology degree from Smith College, and completed the 2-year program on Drug Development and Regulatory Science from UCSF School of Pharmacy ACDRS program created by Carl Peck.</p>
+
+<h1>Scientific advisors</h1>
+<h2>Stephen A. Adam, Ph.D., Associate Professor, Cell and Developmental Biology, Feinberg School of Medicine Northwestern University</h2>
+<p>Dr. Adam is at Northwestern, which has a leading cell and developmental biology research department with particular expertise in vimentin and a long record of significant NIH grants to Dr. Adam and to professor emeritus Robert Goldman Ph.D. who published over 80 papers on vimentin and was a leading lecturer on vimentin 1970-2023 with global presence via online learning portals. </p>
+<p><a href="javascript: void(0);" onclick="document.getElementById('stephen-a-adam').classList.add('active');" style="font-weight: bold;">&raquo; Read more</a></p>
+<div id = "stephen-a-adam" class = "modal-box hide">
+<a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class = 'close'>&#x2716;</a>
+<h1>Stephen A. Adam, Ph.D., Associate Professor, Cell and Developmental Biology, Feinberg School of Medicine Northwestern University</h1>
+<p>Dr. Adam&rsquo;s background includes extensive work on cellular mechanisms that establish and maintain cellular compartments and transport,  which supports his understanding of vimentin in these processes.  This work began when he was a postdoc with Larry Gerace at Johns Hopkins and then continued at Scripps, where he was a Damon Runyon/Walter Winchell Fellow. Later, he transitioned to studying the assembly and biochemical roles of intermediate filament proteins, in particular the nuclear Lamins and cytoplasmic vimentin, their post-translational modifications and effects on assembly, structure, and interactions with other factors in cells. He uses mammalian cell models to study transport within the cell.</p>
+<p>As part of the Goldman group, Dr. Adam is widely informed on the history of the study of vimentin filaments, behavior, manipulations, disease correlations, and the rationale for safety for a drug that targets vimentin.  </p>
+<p>He has interacted with Aluda for 3 years, offering many insights on the nature of conformational changes, the allosteric nature of vimentin's interacting proteins, and the long-term safe human use of the primary vimentin degrading tool compound in humans (WFA) in an herbal supplement.</p>
+<p>Dr. Adam produced the second major vimentin Review paper <a href="https://pubmed.ncbi.nlm.nih.gov/35487686/" target="_blank"><i>Roles of Vimentin in Health and Disease</i></a>  (PMID: 35487686, Goldman), which summarized all literature on KO models, proving vimentin&rsquo;s wide roles but mild phenotypes for those roles when absent.  This was key to evolving the refined and current view in the field that vimentin regulates the adaptability or change of many cellular processes, but the role is not significant enough in normal conditions (both balanced and adapting cell process) to create an adverse reaction if absent.  These facts of vimentin&rsquo;s native biology are the most critical foundation to understanding how Aluda&rsquo;s modulation drug action can be unable to interrupt or alter normal biology to create detriment or harm, and in parallel can achieve important efficacy by modulating vimentin&rsquo;s role in driving those processes to overstimulation and maladaptation.</p>
+</div>
+
+<h2>Michael Dustin, Ph.D., Director of Research, Kennedy Institute at Oxford University</h2>
+<p>Senior author of a large consortium of immunologists and transplant experts that produced seminal work on vimentin&rsquo;s functional control of the immune system using structural biology, in vitro and in vivo modeling to translate into evidence of a role in disease.  Regulatory T cells have a vimentin superstructure inside that partitions their immunosuppressive molecules away from their site of activation.  This partition is directly responsible for their ability to switch from quiescent to actively immunosuppressing and to do so in a manner that is protected from the cell&rsquo;s external milieu (<a href="https://doi.org/10.1172/JCI95713">https://doi.org/10.1172/JCI95713</a>). This paper further established that it is the dysregulation of vimentin that is the origination point of immunological diseases of many kinds that feature suboptimal or insufficient response by Regulatory T cells.</p>
+<p>Aluda has collaborated with Dr. Dustin&rsquo;s structural biology expert Ewoud Compeer, PhD. to create super-microscope images of vimentin inside Tregs in response to Aluda drug.</p>
+<p><a href="javascript: void(0);" onclick="document.getElementById('michael-dustin').classList.add('active');" style="font-weight: bold;">&raquo; Read more</a></p>
+<div id = "michael-dustin" class = "modal-box hide">
+<a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class = 'close'>&#x2716;</a>
+<h1>Michael Dustin, Ph.D., Director of Research, Kennedy Institute at Oxford University</h1>
+<p>Prof. Dustin has a B.A. in Biology from Boston University (1984) and a Ph.D. in Cell and Developmental Biology from Harvard University (1990). He studied glucose transport in red blood cells for his undergraduate thesis with Scott W. Peterson. He studied biochemistry and regulation of lymphocyte adhesion molecules during his PhD with Timothy A. Springer. He completed post-doctoral training with Stuart Kornfeld on lysosome structure and function at Washington University School of Medicine (1993).</p>
+<p>Dr. Dustin led his own group at the Department of Pathology at Washington University School of Medicine under Steve Teitelbaum and Emil Unanue from 1993 to 2000. While at Wash U, he led a collaborative group in discovering requirements for the T cell immunological synapse with Andrey Shaw, Paul Allen, Mark Davis (Stanford) and Emil Unanue. He moved his lab to the Skirball Institute of Biomolecular Medicine at New York University School of Medicine in 2001.  Continuation of work on the immunological synapse led to a basic description of the supramolecular assemblies that make up the mature immunological synapse. Specialized functions of the immunological synapse in cytotoxic T cells and regulatory T cells were also explored.</p>
+<p>He was director of the NIH-funded Nanomedicine Center for Mechanobiology from 2009-2014.  To further advance studies on the immunological synapse and translation to treatment of human diseases he moved to the Kennedy Institute of Rheumatology at the University of Oxford in 2013 supported by a Principal Research Fellowship from the Wellcome Trust.</p>
+<p>Dr. Dustin recognized the importance of a specific vimentin targeting molecule for further study of immune control through Tregs and Dr. Compeer&rsquo;s exploratory research with Aluda's compound since 2020 has significantly expanded the proof of drug action in Tregs of different kinds.   An expansion on the 2018 paper, with higher visibility, is planned that will correctly summarize the field of Treg manipulating approaches and the advantages of using vimentin.  Drs. Dustin and Dr. Compeer have multiple grant applications underway to enable further research using Aluda drug, and we continue to refine collaboration concepts to provide compelling research evidence to support Aluda&rsquo;s existing in vivo data sets in IBD, IPF, MS, RA, T1D, and beyond which showed their highest statistical significance in the most severe disease models, reflecting the potency of drug action to restore effective Treg functionality in diseases where that is a central deficit. </p>
+</div>
+
+<h2>Annica Gad, Ph.D., Principal Researcher, Associate Professor, Karolinska Institutet</h2>
+<p>Author of a leading review paper on vimentin <a href="https://pubmed.ncbi.nlm.nih.gov/30248895/" target="_blank"><i>Vimentin Diversity in health and disease</i></a> (PMID: 30248895).  Expert on vimentin structural biology, history, and safety with specialization in cancer.  Publication with Aluda in 2023 on mechanical change of vimentin filaments in the presence of Aluda drug.</p>
+<p><a href="javascript: void(0);" onclick="document.getElementById('annica-gad').classList.add('active');" style="font-weight: bold;">&raquo; Read more</a></p>
+<div id = "annica-gad" class = "modal-box hide">
+<a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class = 'close'>&#x2716;</a>
+<h1>Annica Gad, Ph.D., Principal Researcher, Associate Professor, Karolinska Institutet</h1>
+<p>Dr. Gad had a long tenure at the University of Sheffield where she pioneered the understanding of vimentin which she continues and expands at Karolinska, where she is leading a larger research consortium on filaments and cancer.</p>
+
+<p>Over the course of her career, Dr. Gad has had extensive conversations with the author of the seminal 1994 paper containing the initial Vimentin KO modeling that found no phenotype when it was absent (PMID: 7954832). It was an extremely thorough examination, dissecting KO mice, KO rats, and their KO progeny, confirming that none displayed any abnormal phenotypes in the absence of vimentin.</p>
+<p>This finding was completely unexpected and in sharp contrast to all previous intermediate filaments that had been characterized by KO, so it kicked off scientific debate and controversy that lasted for decades. How could such an abundant protein as Vimentin not create a deficit if absent?  Dr. Gad has followed the controversy and counterpoints since an early date and was central in its resolution. She was the first to point out that all later papers that claimed to find phenotypes had needed to employ abnormal conditions or pressures to elicit those phenotypes.</p>
+<p>This critical observation led to confirming vimentin&rsquo;s conserved role is outside normal conditions.  It is an expansive scaffold facility for cell processes to adapt their rate in response to a variable environment and enable resilience and change to maintain health.  In disease, vimentin has the same role but in the presence of escalating signals of any kind in its interactome now creates the potential to expand the small changes of health it is conserved for into overstimulated or maladaptation cell processes that produce pathology. </p>
+<p>Dr. Gad has multiple ongoing publications on her vimentin work and is an active member of the international filament biology community enabling Aluda conversations and collaborations.  She continues to clarify the understanding of long-standing oncology research showing vimentin&rsquo;s heightened presence in the epithelial-to-mesenchymal transition and how it complements the central mechanism of action for this drug in reducing the vimentin-enabled overstimulations in cancer that arise from heightened communication by exosomes.  The problematic and unsolved role of upregulated exosome release is an extremely active field with wide proof that it could be a new intervention point for blocking how the tumor microenvironment is created and sustained, how metastases are primed, and how systemic metabolic dysregulation occurs, led by MD researchers at UPenn (W. Guo), Cedars Sinai (P. Noble), MD Anderson (R. Kalluri), MSK (D. Lyden),  and UCSF (R. Blelloch) to name a few.  We anticipate Dr. Gad&rsquo;s participation in future research with those entities that will expand on Aluda&rsquo;s exploratory work (Aluda paper PMCID: PMC8297618) and may enable clinical study in this area as follow on indications. </p>
+</div>
+
+<h2>Teja Kulkarni, MD, U Alabama Birmingham Medical School, Head of ILD Unit</h2>
+
+<p>Pioneering pulmonology MD research group that identified vimentin as the highest potential target for IPF and published their findings before our work.  Their accomplished researchers use pulmospheres created from their patients.  UAB is one of the largest regional hospitals for pulmonary trials, with many experts knowledgeable of its complex pathology featuring dysregulated collagen production, autophagic clearance of excess collagen, scarring/injury cycles, and persistent airway inflammation.  UAB did seminal work on multiple of these areas proving vimentin is a key regulator.</p>
+<p><a href="javascript: void(0);" onclick="document.getElementById('teja-kulkarni').classList.add('active');" style="font-weight: bold;">&raquo; Read more</a></p>
+<div id = "teja-kulkarni" class = "modal-box hide">
+<a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class = 'close'>&#x2716;</a>
+<h1>Teja Kulkarni, MD, U Alabama Birmingham Medical School, Head of ILD Unit</h1>
+<p>Dr. Kulkarni received her medical training and internship at Bangalore Medical College and Research Institute followed by a Masters in Public Health at Harvard T.H. Chan School of Public Health. She completed a residency in Internal Medicine at Wayne State University 2013 and a clinical and research fellowship at UAB in 2016, after which she was appointed as faculty for the Division of Pulmonary, Allergy and Critical Care Medicine and subsequently Director of Interstitial Lung Disease Program.  She is on numerous committees including the steering committee of the ILD network at American College of Chest Physicians and has extensive experience as principal and co-investigator on clinical trials in IPF, ILD and other indications.  Her research focuses on developing imaging biomarkers to predict and assess response.</p>
+<p>Dr. Kulkarni has closely reviewed Aluda&rsquo;s fibrosis data across lung and liver and recognizes the high priority of clinical testing for this vimentin-targeting drug given UAB&rsquo;s role in establishing its importance.  Being a biomarker expert, Dr. Kulkarni was particularly aware of the challenge Aluda faced of explaining a target that does not change quantity or level in disease.  Her extensive trial and clinical experience with single-pathway target drugs provides her with first-hand knowledge of both an evasive biology that has escaped many pathway targets and a patient population unable to tolerate existing drugs.  Over multiple years, Dr. Kulkarni reviewed Aluda efficacy data closely, seeing its highly significant ameliorations of the multiple disease features UAB had shown central to disease.   By having an action only on elevated disease signals, the UAB group recognized that Aluda&rsquo;s drug creates the potential to ameliorate these component features of IPF as they occur, when they occur, tracking their shifting and evasive nature.  This holds potential as an important breakthrough for patients non-responsive (or intolerant to) existing mechanisms.  Dr. Kulkarni contributed to developing clinical trial designs with rapid readouts and greatest enrollment potential and will participate in trial leadership at the appropriate time.</p>
+</div>
+		<p class = "pageurl">This document was printed from <a href="http://www.aludapharm.com/company/team.html">http://www.aludapharm.com/company/team.html</a></p>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class = "inner">
+      <span id = 'social-buttons'>
+        <a href = "https://twitter.com/aluda_pharm" target="_blank"><img src="/company/x.svg" alt="Aluda on X"></a>
+        <a href = "https://www.linkedin.com/company/aluda-pharmaceuticals-inc."  target="_blank"><img src="/company/linkedin.svg"alt="Aluda on LinkedIn"></a>
+      </span>
+			<b>Aluda Pharmaceuticals, Inc.</b><br/>
+			Tel: +1 (650) 260-5860</a><br/>
+			Email: <a href="mailto:info@aludapharm.com">info@aludapharm.com</a><br/><br/>
+			&copy; Aluda Pharmaceuticals, Inc.  All rights reserved.
+		</div>
+	</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136955566-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136955566-1');
+</script>
+</body>
+</html>

@@ -1,0 +1,1215 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Aluda Pharmaceuticals, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+<link rel="prefetch" href="/company/background-full.jpg" />
+<link rel="prefetch" href="/company/background-tall.jpg" />
+<link rel="prefetch" href="/company/x.svg" />
+<link rel="prefetch" href="/company/linkedin.svg" />
+<link rel="prefetch" href="/logo.svg" />
+<link rel="prefetch" href="background.jpg" />
+<style>
+*, html {
+scroll-behavior: smooth !important;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#logo img {
+  height: 90px;
+  transition: height 0.25s;
+}
+.shrink #logo img {
+  height: 70px;
+}
+a, a:visited, a:active {
+	color: #0c2f74;
+}
+.wrapper {
+	margin: auto;
+	min-width: 1045px;
+	max-width: 1125px;
+  max-width: 1600px;
+}
+#header {
+	padding: 26px 9px 26px 9px;
+  transition: padding 0.25s;
+}
+.shrink #header {
+	padding: 16px 9px 16px 9px;
+}
+#header-outer {
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+#header-placeholder {
+  width: 100%;
+  height: 142px;
+}
+#header-hamburger-wrapper {
+  display: none;
+}
+#footer {
+	background: #0c2f74;
+/*	width: max-content;*/
+	color: #bbc7e0;
+	font-size: 18px;
+}
+#footer .inner {
+  padding: 26px 9px 26px 9px;
+}
+#footer a {
+	color: inherit;
+}
+#social-buttons {
+  float: right;
+}
+#social-buttons img {
+  padding: 8px;
+  width: 48px;
+  opacity: 0.8;
+}
+#social-buttons img:hover {
+  opacity: 1.0;
+}
+#navigation {
+	float: right;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+  
+  transition: height 0.25s, line-height 0.25s;
+}
+.shrink #navigation {
+	height: 70px;
+	line-height: 70px;
+}
+#navigation * {
+  margin: 0;
+}
+.navigation-item {
+  position: relative;
+  display: inline-block;
+	font-size: 27px;
+	font-weight: 600;
+	color: #0c2f74;
+	margin: 0 3px 0 3px;
+}
+.navigation-item a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation-item a.item {
+	padding: 9px 14px 9px 14px;
+	border-radius: 4px;
+}
+.navigation-item .navigation-wrapper:hover a.item, .navigation-item a.item:hover, .navigation-item a.item:active,
+.navigation-item .navigation-wrapper .navigation-dropdown a:hover,
+.navigation-item .navigation-wrapper .navigation-dropdown a:active{
+	background: #0c2f74;
+	color: white;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+.navigation-item .navigation-wrapper:hover .navigation-dropdown {
+  display: block;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.navigation-item .navigation-wrapper .navigation-dropdown {
+  display: none;
+  background: white;
+  border: 2px solid #0c2f74;
+  line-height: 44px;
+  padding: 8px 0px 8px 0px;
+  position: absolute;
+  z-index: 10;
+  top: 68px;
+  left: 0px;
+  min-width: 225px;
+  transition: top 0.25s;
+}
+.shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+  top: 58px;
+}
+.navigation-item .navigation-wrapper .navigation-dropdown a {
+  display: block;
+  background: transparent;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 4px 14px 4px 14px;
+  color: #0c2f74;
+  white-space: nowrap;
+}
+.subsection .arrow::before {
+    content:'-\00a0\00a0\00a0\00a0'
+}
+.subsection.selected .arrow::before {
+    content:'›\00a0\00a0\00a0\00a0'
+}
+/*.navigation-item .navigation-wrapper .navigation-dropdown a::before {
+  content: "-\a0\a0\a0 ";
+}*/
+#location-bar {
+	clear: both;
+	background: #0c2f74;
+	/*width: max-content;*/
+	color: white;
+	font-size: 20px;
+}
+#location-bar.index-page, #location-bar {
+  /*background-image: url('/company/background.jpg');*/
+  background-repeat: no-repeat;
+  background-color: #0c2f74;
+  box-shadow: inset 0px 10px 15px -15px #0c2f74;;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  height: 300px;
+  background-image: url('background.jpg');
+  transition: background-position 0.5s;
+}
+.shrink #location-bar.index-page, .shrink #location-bar{
+  background-position: 50%  calc(50% + 20px);
+}
+#location-bar .wrapper > .inner {
+	padding: 8px 9px 9px 9px;
+}
+#location-bar.index-page .inner, #location-bar .wrapper > .inner {
+  padding-top: 225px;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #0c2f74;
+  line-clamp: 1;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#location-bar a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+}
+#location-bar a:hover {
+	text-decoration: underline;
+}
+h1 {
+	color: #0c2f74;
+	font-weight: bold;
+	font-size: 30px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-left: -2px;
+    line-height: 1.2em;
+    scroll-padding-top: 10px;
+}
+h2 {
+  color: #0c2f74;
+	font-weight: bold;
+	font-size: 26px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    scroll-padding-top: 10px;
+}
+h3 {
+  color: #0c2f74;
+  scroll-padding-top: 10px;
+}
+#content {
+	margin-right: 300px;
+	padding-left: 9px;
+	padding-right: 18px;
+	padding-bottom: 1px;
+	margin-bottom: 18px;
+	border-right: 2px solid #0c2f74;
+	min-height: 600px;
+}
+#content img, #content svg {
+	max-width: 100%;
+  height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content, #content p {
+	font-size: 19px;
+	line-height: 1.4em;
+	/* line-height: 1.6em; */
+}
+#content .pageurl {
+  display: none;
+}
+/*.hide-navigation #content-sidebar {
+  display: none;
+}
+.hide-navigation #content {
+  border-right: none;
+}*/
+.hide-navigation #content-sidebar .section {
+  display: none;
+}
+.hide-navigation #content-sidebar {
+  margin-top: -10px;
+}
+#content .clear {
+	clear: both;
+	margin: 64px;
+}
+#content-sidebar {
+	width: 270px;
+	min-height: 400px;
+	float: right;
+	color: #0c2f74;
+	line-height: 1.8em;
+  margin-right: 9px;
+}
+#content-sidebar a {
+	color: inherit;
+	text-decoration: none;
+}
+#content-sidebar a:hover {
+	text-decoration: underline;
+}
+#content-sidebar .section {
+  padding-top: 10px;
+	font-size: 26px;
+	font-weight: bold;
+}
+#content-sidebar .subsection {
+	font-size: 22px;
+	padding-left: 25px ;
+	text-indent: -25px ;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+#content-sidebar .subsection.selected {
+  font-weight: 600;
+}
+#content-sidebar-inner {
+  width: 270px;
+}
+#content-sidebar-inner.fixed {
+  position: fixed;
+}
+#content-sidebar .subsection .arrow {
+}
+
+
+.modal-box.hide{
+  display: none;
+}
+.modal-box.active{
+  display: block !important;
+  border: 2px solid #0c2f74;
+    padding: 16px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow-y: scroll;
+    z-index: 200;
+}
+.modal-box .close {
+  display: none;
+}
+.modal-box.active .close{
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  text-decoration: none;
+}
+.modal-box h1 {
+  margin-top: 0px;
+}
+
+/*@media only screen and (max-width: 1000px) {
+  #logo {
+    display: block;
+  }
+  #navigation {
+    float: none;
+    text-align: center;
+  }
+  .navigation-item {
+    font-size: 20px !important;
+  }
+}*/
+@media only screen and (max-width: 1200px) {
+  #logo img {
+    height: 75px;
+  }
+  .shrink #logo img {
+    height: 60px;
+  }
+  #navigation {
+    height: 75px;
+    line-height: 75px;
+  }
+  #header-placeholder {
+    height: 127px;
+  }
+  .shrink #navigation {
+    height: 60px;
+    line-height: 60px;
+  }
+  .navigation-item {
+    font-size: 24px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown {
+    line-height: 48px;
+    top: 58px;
+    min-width: 250px;
+  }
+  .shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+    top: 53px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown a {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 4px 16px 4px 16px;
+  }
+  .wrapper {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1250px;
+  }
+  #content, #location-bar .wrapper > .inner, #header, #footer .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #content-sidebar {
+    line-height: 1.8em;
+    margin-right: 24px;
+    width: 255px;
+  }
+  #content-sidebar .section {
+    font-size: 22px;
+  }
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {/*was 768*/
+  body {
+  }
+  #logo {
+    transition: padding 0.5s;
+  }
+  #logo img{
+  	height: 60px;
+  }
+  .shrink #logo img {
+  	height: 50px;
+  }
+  .shrink #logo {
+    padding: 10px;
+  }
+  .wrapper {
+  	min-width: 0;
+  	max-width: none;
+  }
+  #header-outer {
+    /* position: static; */
+  }
+  #header-placeholder {
+    height: 100px;
+  }
+  #header, .shrink #header {
+  	padding: 0;
+  }
+  #header-hamburger-wrapper {
+    display: block;
+    float: right;
+  }
+  #header-hamburger {
+    display: block;
+    border: 1px solid #0c2f74;
+    padding: 9px 14px 9px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    height: 28px;
+    margin: 5px;
+    transition: margin 0.5s;
+  }
+  .shrink #header-hamburger {
+    margin: 0;
+  }
+  #header-hamburger:hover, .menu-open #header-hamburger {
+    background: #0c2f74;
+    color: #ffffff;
+  }
+  #navigation {
+    display: none;
+  }
+  .menu-open #navigation {
+    display: block;
+  }
+  #footer {
+    font-size: 18px;
+  }
+  #footer .inner {
+    padding: 20px 24px 20px 24px;
+  }
+#social-buttons img {
+  padding: 8px;
+  width: 32px;
+}
+  #logo {
+  	display: block;
+  	padding: 20px;
+  }
+  #navigation, .shrink #navigation {
+  	float: none;
+  	height: auto;
+  	line-height: inherit;
+    margin-bottom: 10px;
+  }
+  #navigation .navigation-item {
+  	/*padding: 4px 0 4px 0;*/
+  	font-size: 20px;
+    text-align: center;
+  }
+  .hide-navigation #content-sidebar {
+    margin-top: 0;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown,
+  .navigation-item .navigation-wrapper:hover .navigation-dropdown {
+    display: none !important;
+  }
+  #navigation .navigation-item a.item {
+  border-top: 1px solid #0c2f74;
+    display: block;
+    border-radius: 0;
+    padding: 10px;
+  }
+  #navigation .navigation-item {
+    display: block;
+  }
+  #navigation .navigation-item:last-child a.item {
+    border-bottom: 1px solid #0c2f74;
+  }
+  #location-bar {
+    font-size: 20px;
+  }
+  #content-sidebar {
+    width: auto;
+  	float: none;
+  	line-height: 1.8em;
+  	min-height: 0px;
+  	padding: 10px 10px 10px 10px;
+  	border-bottom: 1px solid #0c2f74;
+    margin-right: 0 !important;
+  }
+  #content-sidebar .section {
+  	display: none;
+  }
+  #content-sidebar .subsection {
+  	font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #content-sidebar-inner {
+      width: auto;
+  }
+  #content-sidebar-inner.fixed {
+    position: static;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+  }
+  #content, #content p {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+  #location-bar.index-page, #location-bar {
+    height: 200px;
+  }
+  #location-bar.index-page > .wrapper > .inner, #location-bar > .wrapper >  .inner {
+    padding-top: 140px;
+    font-size: 32px;
+  }
+  #location-bar {
+		/* padding-top: 0 !important; */
+		/* margin-top: 0 !important; */
+    /* background-position: 50% 50% !important; */
+  }
+}
+@media print {
+  #navigation {
+    display: none;
+  }
+#header-outer {
+  position: static;
+}
+
+  #location-bar, #footer {
+    background: white;
+    color: black;
+  }
+  #location-bar {
+    display: none;
+  }
+  #header {
+    padding: 10px;
+  }
+
+  #footer .inner {
+    padding: 10px;
+  }
+
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+    border-bottom: 2px solid black;
+  }
+
+  #content a, #content a:visited {
+    color: black;
+  }
+
+  #content img, #content svg {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  #content .pageurl {
+    display: block;
+    font-style: italic;
+  }
+
+  #content-sidebar {
+    color: black;
+    width: auto;
+    float: none;
+    line-height: 1.5em;
+    min-height: 0px;
+    padding: 10px 10px 10px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  #content-sidebar .section {
+    font-size: 24px;
+  }
+
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+#content-sidebar-inner.fixed {
+  position: static;
+}
+
+  h1 {
+    color: black;
+  }
+}
+</style>
+<script>
+function update() {
+var e = document.getElementById('content-sidebar');
+var f = document.getElementById('content-sidebar-inner');
+var r = e.getBoundingClientRect();
+if (r.top < 120.0) {
+f.classList.add('fixed');
+f.style.top = 120.0;
+} else {
+  f.classList.remove('fixed');
+}
+
+}
+window.addEventListener('scroll', update);
+window.addEventListener('resize', update);
+function update2() {
+var e = document.body;
+if (document.body.scrollTop > 100) {
+  e.classList.add('shrink');
+} else {
+  e.classList.remove('shrink');
+}
+
+}
+window.addEventListener('scroll', update2);
+window.addEventListener('resize', update2);
+</script>
+</head>
+<body>
+<div id="header-placeholder">
+<div id="header-outer">
+<div class="wrapper">
+	<div id="header">
+		<span id="logo">
+			<a href = "/"><img src="/logo.svg" alt="Aluda Pharmaceuticals, Inc." /></a>
+      <div id="header-hamburger-wrapper">
+        <div id="header-hamburger" onclick="document.body.classList.toggle('menu-open')">
+          &#x2630;
+        </div>
+      </div>
+		</span>
+		<div id="navigation">
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/">Company</a>
+          <div class = "navigation-dropdown">
+            <a href = "/">Overview</a>
+            <a href = "/company/news.html">News</a>
+            <a href = "/company/team.html">Management</a>
+            <a href = "/company/careers.html">Careers</a>
+          </div>
+        </span>
+      </span>
+      <span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/science">Science</a>
+            <div class = "navigation-dropdown">
+              <a href = "/science/vimentin.html">Vimentin</a>
+              <a href = "/science/stat3.html">STAT3</a>
+              <a href = "/science/publications.html">Aluda Publications</a>
+            </div>
+        </span>
+      </span>
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/pipeline">Pipeline</a>
+        </span>
+      </span>
+			<span class="navigation-item"><a class="item" href="/partnering">Partnering</a></span>
+			<span class="navigation-item"><a class="item" href="/contact">Contact</a></span>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<style>
+	/*#content-sidebar {
+	display: none;
+}*/
+	#content {
+		border-right: none;
+		margin-right: 0;
+	}
+
+	#content p,
+	#content h1 {
+		/* margin-left: 200px; */
+		margin-right: calc(225.0px + 25px);
+	}
+
+	#content h1 {
+		margin: 0;
+	}
+
+	#content-sidebar {
+		min-height: 0;
+		/*	padding-bottom: 14px;*/
+		/*border-bottom: 2px solid #1a4396;*/
+	}
+
+	.content-left {
+		margin-right: 300px;
+		margin-right: 290px;
+	}
+
+	.content-sidebar {
+		width: 270px;
+		min-height: 400px;
+		float: right;
+		padding-right: 9px;
+		margin-top: -40px;
+	}
+
+	#content {
+		min-height: 0;
+		margin-top: 30px;
+		margin-right: 0;
+	}
+
+	#content .gallery-pic {
+		width: 225.0px;
+		height: 225.0px;
+		/* width: 160px;
+	height: 120px; */
+		background-size: 100%;
+		background-position: center;
+		float: right;
+		/* float: left; */
+		/* margin: 0 16px 8px 16px; */
+		/* border: 1px solid rgba(12, 47, 116,0.2); */
+		border-radius: 8px;
+		box-shadow: 10px 10px 15px -15px #0c2f74;
+	}
+
+	/* #content .gallery-pic {
+	width: 100%;
+	clear: both;
+} */
+	.side-box {
+		border: 2px solid #0c2f74;
+		font-size: 20px;
+		text-align: center;
+		padding: 9px;
+		margin: 18px;
+		font-weight: 600;
+		color: #0c2f74;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(125deg, rgba(255, 255, 255, 1) 0%, rgba(237, 243, 253, 1) 100%);
+		box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
+		border-radius: 5px;
+	}
+
+	#news-gallery {
+		height: 80px;
+		margin-bottom: -80px;
+	}
+
+	#news-gallery .outer {
+		padding: 10px;
+		background: linear-gradient(125deg, rgba(70, 0, 0, 0.6) 0%, rgba(170, 0, 0, 0.7) 100%);
+		position: relative;
+		z-index: 1;
+	}
+
+	#news-gallery .text {
+		color: white;
+		text-align: center;
+		font-size: 24px;
+	}
+
+	#news-gallery .text a {
+		font-weight: bold;
+		color: white !important;
+	}
+
+	#background-gallery {
+		background-image: url('/company/background-full.jpg');
+		/* background-color: #ffffff; */
+		background-color: #91c6d1;
+		background-repeat: no-repeat;
+		background-size: min(200vw, calc(2 * 1600px));
+		background-position: bottom center;
+		/* background-image: url('/company/background.jpg'), url('/company/background-left.jpg'), url('/company/background-right.jpg');
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: min(100vw, 1600px), 725px, 725px;
+	background-position: bottom center, bottom left calc(50vw - 1600px), bottom right calc(50vw - 1600px); */
+		/*height: max(math(100vh - 142px), 850.0px);*/
+		height: 850.0px;
+		height: clamp(250px, 100vh - 142px, 850.0px);
+	}
+
+	#background-gallery .text {
+		color: #0c2f74;
+		font-weight: bold;
+		font-size: 56px;
+		line-height: 60px;
+		text-shadow: 2px 2px 50px #ffffff;
+		position: relative;
+		top: calc(850.0px - 210px);
+		top: clamp(40px, 100vh - 142px - 210px, calc(850.0px - 210px));
+		margin-left: 32px;
+	}
+
+	#background-gallery .arrow-down {
+		color: rgba(255, 255, 255, 0.9);
+		font-weight: bold;
+		font-size: 120px;
+		text-align: right;
+		position: relative;
+		top: clamp(0px, calc(100vh - 142px - 210px - 65px), calc(850.0px - 210px - 65px));
+		float: right;
+		right: 20px;
+		transition-property: transform, opacity, padding-top;
+		transition-duration: 1.5s;
+		animation-name: pulse;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		/* width: 140px; */
+		cursor: pointer;
+	}
+
+	#background-gallery .arrow-down img {
+		width: 80px;
+		opacity: 0.75;
+	}
+
+	@keyframes pulse {
+		0% {
+			/* transform: scale(1); */
+			opacity: 0.6;
+		}
+
+		50% {
+			/* transform: scale(1.15); */
+			opacity: 1.0;
+			padding-top: 10px;
+		}
+
+		100% {
+			/* transform: scale(1); */
+			opacity: 0.7;
+		}
+	}
+
+	#leader-section {
+		background: linear-gradient(125deg, rgba(230, 237, 255, 0.7) 0%, rgba(192, 213, 255, 1) 100%);
+		/*background: #c0d5ff;*/
+		/*border-bottom: 2px solid #0c2f74;*/
+		/*box-shadow: 5px 5px 15px rgba(192,213,255,0.5);*/
+		box-shadow: inset 0px -10px 20px -15px rgba(12, 47, 116, 0.2);
+	}
+
+	#leader-section-content {
+		padding-left: 9px;
+		padding-right: 18px;
+		padding-bottom: 1px;
+		margin-bottom: 18px;
+		font-size: 24px;
+		color: #0c2f74;
+	}
+
+	#leader-section-content p {
+		margin: 0;
+		padding-top: 30px;
+	}
+
+	#leader-section-content p:last-child {
+		padding-bottom: 30px;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		#background-gallery {
+			height: clamp(250px, 100vh - 127px, 850.0px);
+		}
+
+		#background-gallery .text {
+			top: clamp(40px, 100vh - 127px - 210px, calc(850.0px-210px));
+		}
+
+		#leader-section-content {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+
+	@media only screen and (max-width: 1200px) {
+		#background-gallery .arrow-down img {
+			width: 64px;
+		}
+
+		#content p,
+		#content h1 {
+			/* margin-left: 200px; */
+			margin-right: 0;
+		}
+
+		#content .gallery-pic {
+			float: none;
+			height: 100px;
+			width: 100%;
+			margin: -5px 0 22px 0;
+		}
+
+		#content .gallery-pic.position-68 {
+			background-position: 50% 68%;
+		}
+	}
+
+	@media only screen and (max-width: 920px) {
+
+		/*was 768*/
+		#news-gallery {
+			height: auto;
+			margin-bottom: 0;
+		}
+
+		#news-gallery .text {
+			font-size: 20px;
+		}
+
+		#leader-section-content {
+			margin-bottom: 0;
+		}
+
+		.content-left {
+			margin-right: 0;
+		}
+
+		.content-sidebar {
+			width: auto;
+			float: none;
+			margin: 0;
+			padding: 0;
+			min-height: 0;
+			text-align: center;
+		}
+
+		.side-box {
+			font-size: 18px;
+			padding: 8px;
+			margin: 15px;
+		}
+
+		#background-gallery {
+			/* background-image: url('/company/background.jpg');
+		background-color: #0c2f74;
+		background-size: 100% auto;
+		background-position: center center; */
+			height: 470px;
+		}
+
+		#background-gallery .text {
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 38px;
+			/* text-shadow: 5px 5px 5px #0c2f74; */
+			position: relative;
+			top: 340px;
+			margin-left: 20px;
+		}
+
+		#background-gallery .arrow-down {
+			color: rgba(255, 255, 255, 0.5);
+			font-weight: bold;
+			font-size: 120px;
+			text-align: right;
+			writing-mode: vertical-rl;
+			position: relative;
+			float: right;
+			top: clamp(40px, 340px - 70px, 340px - 70px);
+		}
+
+		#content-sidebar-inner.fixed {
+			position: fixed;
+		}
+
+		#content-sidebar-inner {
+			width: auto;
+			padding: 10px;
+			border-bottom: 1px solid #0c2f74;
+			width: calc(100% - 20px);
+		}
+
+		#content-sidebar {
+			width: auto;
+			padding: 0;
+			border-bottom: 0;
+		}
+
+		#content-sidebar-inner {
+			background: rgba(255, 255, 255, 0.8);
+			backdrop-filter: blur(10px);
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
+		#background-gallery {
+			background-image: url('/company/background-tall.jpg');
+			background-color: #ffffff;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: bottom center;
+			height: 400.0px;
+		}
+
+		#background-gallery .text {
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 32px;
+			text-shadow: 0px 0px 15px #ffffff, 0px 0px 15px #ffffff, 0px 0px 15px #ffffff, 0px 0px 15px #ffffff, 0px 0px 15px #ffffff;
+			position: relative;
+			top: 24px;
+			margin-left: 24px;
+		}
+
+		#background-gallery .arrow-down {
+			color: rgba(12, 47, 116, 0.25);
+			font-weight: bold;
+			float: left;
+			font-size: 120px;
+			text-align: left;
+			writing-mode: vertical-rl;
+			position: relative;
+			left: 0px;
+			padding-left: 10px;
+			top: clamp(40px, calc(400.0px - 180px), calc(400.0px - 180px));
+		}
+
+		#news-gallery .text {
+			font-size: 16px;
+		}
+	}
+
+	@media print {
+		.content-left {
+			margin: 0 0 0 0;
+		}
+	}
+</style>
+<div id="news-gallery">
+	<div class="outer">
+		<div class="wrapper">
+			<div class="inner">
+				<div class='text'>
+					Latest news:
+					<a href="https://doi.org/10.3390/life16030457">Publication on modulating vimentin as a systems-level
+						therapeutic strategy for sepsis (doi: 10.3390/life16030457)</a> (Mar 11, 2026)
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function update2() {
+		var e = document.getElementById('content-sidebar');
+		var f = document.getElementById('content-sidebar-inner');
+		var g = document.getElementById('header-outer');
+		var header_height = g.clientHeight;
+		e.style.height = f.clientHeight + 'px';
+		sectionOffset = f.clientHeight;
+		var r = e.getBoundingClientRect();
+		var updated = false;
+		if (r.top < header_height) {
+			f.classList.add('fixed');
+			var oldTop = f.style.top;
+			f.style.top = header_height;
+			if (oldTop != f.style.top) {
+				updated = true;
+			}
+		} else {
+			f.classList.remove('fixed');
+		}
+		if (updated) {
+			setTimeout(update2, 50);
+		}
+	}
+	window.addEventListener('scroll', update2);
+	window.addEventListener('resize', update2);
+</script>
+<div id="background-gallery">
+	<div class="wrapper">
+		<div class="inner">
+			<div class='text'>
+				The power to defeat<br>
+				severe immune and<br>
+				fibrotic disease
+			</div>
+			<div class='arrow-down'
+				onclick='window.scroll({top: document.getElementById("content").offsetTop-250, behavior: "smooth"})'>
+				<img src="/company/arrow-down.svg">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="content-sidebar">
+		<div id="content-sidebar-inner">
+			<div class="section">Company</div>
+			<div class="subsection selected"><span class="arrow"></span><a href="/index.html">Overview</a></div>
+			<div class="subsection"><span class="arrow"></span><a href="/company/news.html">News</a></div>
+			<div class="subsection"><span class="arrow"></span><a href="/company/team.html">Management</a></div>
+		</div>
+	</div>
+	<div id="content">
+		<div class='content-left'>
+			<div class='gallery-pic' style="background-image: url('/company/section1.jpg'); background-color: #91a4c5;">
+			</div>
+			<h1>Founded to focus on novel</h1>
+			<p>Aluda was founded around the idea that we need new approaches to drug discovery to find fundamentally new
+				categories and identify better, more powerful intervention points against disease. We bring a deep,
+				networked view of existing drug MOAs and screening approaches of the past 30 years, from pathways to
+				genetics, as well as a knowledge of fundamental cell biology. Our focus is on novel targets that have
+				been unseen and under-recognized versus their impact on the complex nature of disease.</p>
+			<p>Disease is always complex — it is never one cause, one event — and the relationship between its many
+				features is not always linear or related. Existing precision and targeted strategies have not made
+				enough progress against the toughest challenge — when and how it progresses to multi-factor,
+				multi-feature forms that evade and escape existing treatments. We seek to find a new generation of
+				targets with more holistic roles that regulate and control changes in cellular processes from healthy to
+				harmful.</p>
+			<div class='clear'></div>
+			<div class='gallery-pic' style="background-image: url('/company/section2.jpg'); background-color: #387595;">
+			</div>
+			<h1>New targets that capture the complexity of disease</h1>
+			<p>Our targets often have complex and subtle biology, rejected by standard thinking and lacking
+				characteristics that make them legible to AI. This can include targets where the challenge is not the
+				target per se but correctly understanding a change in that target biology that can become an
+				intervention point to stop disease.</p>
+			<p>We believe phenotypic screening designed to identify more holistic disease biology will produce a new
+				generation of drugs with more complete action able to succeed against complex disease.</p>
+			<div class='clear'></div>
+			<div class='gallery-pic' style="background-image: url('/company/section3.jpg'); background-color: #e8e8f1;">
+			</div>
+			<h1>Drug discovery, rebuilt to discover novel</h1>
+			<p>We design new drug molecules with attractive properties and clear patentability. We do not look for new
+				uses for old drugs (repurposing). We incorporate all state-of-the-art drug discovery tools including
+				CRISPR, proteomic array analysis, genetics, molecular medicine, fundamental cell biology, big data,
+				and chemical design, and we pioneered new proprietary concepts in phenotypic screening. Our innovative
+				pharmacological approaches have often exposed gaps in gold standard models by illuminating a
+				disease-driving biology not reiterated in the model.</p>
+			<div class='clear'></div>
+			<div class='gallery-pic position-68'
+				style="background-image: url('/company/section4.jpg'); background-color: #e1d8cb;"></div>
+			<h1>Indication selection clinical strategy</h1>
+			<p>Our focus on the <span style='color:#aa0000; font-weight: bold;'>severe</span> sector within <b>immune
+					and fibrotic diseases</b> allows us to create clinical strategies with approval paths around
+				differentiating features not present in other drugs. Severe and complex patients are often excluded from
+				trials. They are our central focus.</p>
+			<p>This generally avoids head-to-head studies. It shortens timelines to patients, enrolls for these specific
+				features in their severe disease conditions, and provides clear differentiation for pricing rationale.
+			</p>
+			<div class='clear'></div>
+		</div>
+		<p class="pageurl">This document was printed from <a href="http://www.aludapharm.com/index.html">http://www.aludapharm.com/index.html</a></p>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class = "inner">
+      <span id = 'social-buttons'>
+        <a href = "https://twitter.com/aluda_pharm" target="_blank"><img src="/company/x.svg" alt="Aluda on X"></a>
+        <a href = "https://www.linkedin.com/company/aluda-pharmaceuticals-inc."  target="_blank"><img src="/company/linkedin.svg"alt="Aluda on LinkedIn"></a>
+      </span>
+			<b>Aluda Pharmaceuticals, Inc.</b><br/>
+			Tel: +1 (650) 260-5860</a><br/>
+			Email: <a href="mailto:info@aludapharm.com">info@aludapharm.com</a><br/><br/>
+			&copy; Aluda Pharmaceuticals, Inc.  All rights reserved.
+		</div>
+	</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136955566-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136955566-1');
+</script>
+</body>
+</html>

@@ -1,0 +1,1309 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Pipeline - Aluda Pharmaceuticals, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+<link rel="prefetch" href="/company/background-full.jpg" />
+<link rel="prefetch" href="/company/background-tall.jpg" />
+<link rel="prefetch" href="/company/x.svg" />
+<link rel="prefetch" href="/company/linkedin.svg" />
+<link rel="prefetch" href="/logo.svg" />
+<link rel="prefetch" href="background.jpg" />
+<style>
+*, html {
+scroll-behavior: smooth !important;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#logo img {
+  height: 90px;
+  transition: height 0.25s;
+}
+.shrink #logo img {
+  height: 70px;
+}
+a, a:visited, a:active {
+	color: #0c2f74;
+}
+.wrapper {
+	margin: auto;
+	min-width: 1045px;
+	max-width: 1125px;
+  max-width: 1600px;
+}
+#header {
+	padding: 26px 9px 26px 9px;
+  transition: padding 0.25s;
+}
+.shrink #header {
+	padding: 16px 9px 16px 9px;
+}
+#header-outer {
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+#header-placeholder {
+  width: 100%;
+  height: 142px;
+}
+#header-hamburger-wrapper {
+  display: none;
+}
+#footer {
+	background: #0c2f74;
+/*	width: max-content;*/
+	color: #bbc7e0;
+	font-size: 18px;
+}
+#footer .inner {
+  padding: 26px 9px 26px 9px;
+}
+#footer a {
+	color: inherit;
+}
+#social-buttons {
+  float: right;
+}
+#social-buttons img {
+  padding: 8px;
+  width: 48px;
+  opacity: 0.8;
+}
+#social-buttons img:hover {
+  opacity: 1.0;
+}
+#navigation {
+	float: right;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+  
+  transition: height 0.25s, line-height 0.25s;
+}
+.shrink #navigation {
+	height: 70px;
+	line-height: 70px;
+}
+#navigation * {
+  margin: 0;
+}
+.navigation-item {
+  position: relative;
+  display: inline-block;
+	font-size: 27px;
+	font-weight: 600;
+	color: #0c2f74;
+	margin: 0 3px 0 3px;
+}
+.navigation-item a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation-item a.item {
+	padding: 9px 14px 9px 14px;
+	border-radius: 4px;
+}
+.navigation-item .navigation-wrapper:hover a.item, .navigation-item a.item:hover, .navigation-item a.item:active,
+.navigation-item .navigation-wrapper .navigation-dropdown a:hover,
+.navigation-item .navigation-wrapper .navigation-dropdown a:active{
+	background: #0c2f74;
+	color: white;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+.navigation-item .navigation-wrapper:hover .navigation-dropdown {
+  display: block;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.navigation-item .navigation-wrapper .navigation-dropdown {
+  display: none;
+  background: white;
+  border: 2px solid #0c2f74;
+  line-height: 44px;
+  padding: 8px 0px 8px 0px;
+  position: absolute;
+  z-index: 10;
+  top: 68px;
+  left: 0px;
+  min-width: 225px;
+  transition: top 0.25s;
+}
+.shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+  top: 58px;
+}
+.navigation-item .navigation-wrapper .navigation-dropdown a {
+  display: block;
+  background: transparent;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 4px 14px 4px 14px;
+  color: #0c2f74;
+  white-space: nowrap;
+}
+.subsection .arrow::before {
+    content:'-\00a0\00a0\00a0\00a0'
+}
+.subsection.selected .arrow::before {
+    content:'›\00a0\00a0\00a0\00a0'
+}
+/*.navigation-item .navigation-wrapper .navigation-dropdown a::before {
+  content: "-\a0\a0\a0 ";
+}*/
+#location-bar {
+	clear: both;
+	background: #0c2f74;
+	/*width: max-content;*/
+	color: white;
+	font-size: 20px;
+}
+#location-bar.index-page, #location-bar {
+  /*background-image: url('/company/background.jpg');*/
+  background-repeat: no-repeat;
+  background-color: #0c2f74;
+  box-shadow: inset 0px 10px 15px -15px #0c2f74;;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  height: 300px;
+  background-image: url('background.jpg');
+  transition: background-position 0.5s;
+}
+.shrink #location-bar.index-page, .shrink #location-bar{
+  background-position: 50%  calc(50% + 20px);
+}
+#location-bar .wrapper > .inner {
+	padding: 8px 9px 9px 9px;
+}
+#location-bar.index-page .inner, #location-bar .wrapper > .inner {
+  padding-top: 225px;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #0c2f74;
+  line-clamp: 1;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#location-bar a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+}
+#location-bar a:hover {
+	text-decoration: underline;
+}
+h1 {
+	color: #0c2f74;
+	font-weight: bold;
+	font-size: 30px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-left: -2px;
+    line-height: 1.2em;
+    scroll-padding-top: 10px;
+}
+h2 {
+  color: #0c2f74;
+	font-weight: bold;
+	font-size: 26px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    scroll-padding-top: 10px;
+}
+h3 {
+  color: #0c2f74;
+  scroll-padding-top: 10px;
+}
+#content {
+	margin-right: 300px;
+	padding-left: 9px;
+	padding-right: 18px;
+	padding-bottom: 1px;
+	margin-bottom: 18px;
+	border-right: 2px solid #0c2f74;
+	min-height: 600px;
+}
+#content img, #content svg {
+	max-width: 100%;
+  height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content, #content p {
+	font-size: 19px;
+	line-height: 1.4em;
+	/* line-height: 1.6em; */
+}
+#content .pageurl {
+  display: none;
+}
+/*.hide-navigation #content-sidebar {
+  display: none;
+}
+.hide-navigation #content {
+  border-right: none;
+}*/
+.hide-navigation #content-sidebar .section {
+  display: none;
+}
+.hide-navigation #content-sidebar {
+  margin-top: -10px;
+}
+#content .clear {
+	clear: both;
+	margin: 64px;
+}
+#content-sidebar {
+	width: 270px;
+	min-height: 400px;
+	float: right;
+	color: #0c2f74;
+	line-height: 1.8em;
+  margin-right: 9px;
+}
+#content-sidebar a {
+	color: inherit;
+	text-decoration: none;
+}
+#content-sidebar a:hover {
+	text-decoration: underline;
+}
+#content-sidebar .section {
+  padding-top: 10px;
+	font-size: 26px;
+	font-weight: bold;
+}
+#content-sidebar .subsection {
+	font-size: 22px;
+	padding-left: 25px ;
+	text-indent: -25px ;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+#content-sidebar .subsection.selected {
+  font-weight: 600;
+}
+#content-sidebar-inner {
+  width: 270px;
+}
+#content-sidebar-inner.fixed {
+  position: fixed;
+}
+#content-sidebar .subsection .arrow {
+}
+
+
+.modal-box.hide{
+  display: none;
+}
+.modal-box.active{
+  display: block !important;
+  border: 2px solid #0c2f74;
+    padding: 16px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow-y: scroll;
+    z-index: 200;
+}
+.modal-box .close {
+  display: none;
+}
+.modal-box.active .close{
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  text-decoration: none;
+}
+.modal-box h1 {
+  margin-top: 0px;
+}
+
+/*@media only screen and (max-width: 1000px) {
+  #logo {
+    display: block;
+  }
+  #navigation {
+    float: none;
+    text-align: center;
+  }
+  .navigation-item {
+    font-size: 20px !important;
+  }
+}*/
+@media only screen and (max-width: 1200px) {
+  #logo img {
+    height: 75px;
+  }
+  .shrink #logo img {
+    height: 60px;
+  }
+  #navigation {
+    height: 75px;
+    line-height: 75px;
+  }
+  #header-placeholder {
+    height: 127px;
+  }
+  .shrink #navigation {
+    height: 60px;
+    line-height: 60px;
+  }
+  .navigation-item {
+    font-size: 24px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown {
+    line-height: 48px;
+    top: 58px;
+    min-width: 250px;
+  }
+  .shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+    top: 53px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown a {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 4px 16px 4px 16px;
+  }
+  .wrapper {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1250px;
+  }
+  #content, #location-bar .wrapper > .inner, #header, #footer .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #content-sidebar {
+    line-height: 1.8em;
+    margin-right: 24px;
+    width: 255px;
+  }
+  #content-sidebar .section {
+    font-size: 22px;
+  }
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {/*was 768*/
+  body {
+  }
+  #logo {
+    transition: padding 0.5s;
+  }
+  #logo img{
+  	height: 60px;
+  }
+  .shrink #logo img {
+  	height: 50px;
+  }
+  .shrink #logo {
+    padding: 10px;
+  }
+  .wrapper {
+  	min-width: 0;
+  	max-width: none;
+  }
+  #header-outer {
+    /* position: static; */
+  }
+  #header-placeholder {
+    height: 100px;
+  }
+  #header, .shrink #header {
+  	padding: 0;
+  }
+  #header-hamburger-wrapper {
+    display: block;
+    float: right;
+  }
+  #header-hamburger {
+    display: block;
+    border: 1px solid #0c2f74;
+    padding: 9px 14px 9px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    height: 28px;
+    margin: 5px;
+    transition: margin 0.5s;
+  }
+  .shrink #header-hamburger {
+    margin: 0;
+  }
+  #header-hamburger:hover, .menu-open #header-hamburger {
+    background: #0c2f74;
+    color: #ffffff;
+  }
+  #navigation {
+    display: none;
+  }
+  .menu-open #navigation {
+    display: block;
+  }
+  #footer {
+    font-size: 18px;
+  }
+  #footer .inner {
+    padding: 20px 24px 20px 24px;
+  }
+#social-buttons img {
+  padding: 8px;
+  width: 32px;
+}
+  #logo {
+  	display: block;
+  	padding: 20px;
+  }
+  #navigation, .shrink #navigation {
+  	float: none;
+  	height: auto;
+  	line-height: inherit;
+    margin-bottom: 10px;
+  }
+  #navigation .navigation-item {
+  	/*padding: 4px 0 4px 0;*/
+  	font-size: 20px;
+    text-align: center;
+  }
+  .hide-navigation #content-sidebar {
+    margin-top: 0;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown,
+  .navigation-item .navigation-wrapper:hover .navigation-dropdown {
+    display: none !important;
+  }
+  #navigation .navigation-item a.item {
+  border-top: 1px solid #0c2f74;
+    display: block;
+    border-radius: 0;
+    padding: 10px;
+  }
+  #navigation .navigation-item {
+    display: block;
+  }
+  #navigation .navigation-item:last-child a.item {
+    border-bottom: 1px solid #0c2f74;
+  }
+  #location-bar {
+    font-size: 20px;
+  }
+  #content-sidebar {
+    width: auto;
+  	float: none;
+  	line-height: 1.8em;
+  	min-height: 0px;
+  	padding: 10px 10px 10px 10px;
+  	border-bottom: 1px solid #0c2f74;
+    margin-right: 0 !important;
+  }
+  #content-sidebar .section {
+  	display: none;
+  }
+  #content-sidebar .subsection {
+  	font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #content-sidebar-inner {
+      width: auto;
+  }
+  #content-sidebar-inner.fixed {
+    position: static;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+  }
+  #content, #content p {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+  #location-bar.index-page, #location-bar {
+    height: 200px;
+  }
+  #location-bar.index-page > .wrapper > .inner, #location-bar > .wrapper >  .inner {
+    padding-top: 140px;
+    font-size: 32px;
+  }
+  #location-bar {
+		/* padding-top: 0 !important; */
+		/* margin-top: 0 !important; */
+    /* background-position: 50% 50% !important; */
+  }
+}
+@media print {
+  #navigation {
+    display: none;
+  }
+#header-outer {
+  position: static;
+}
+
+  #location-bar, #footer {
+    background: white;
+    color: black;
+  }
+  #location-bar {
+    display: none;
+  }
+  #header {
+    padding: 10px;
+  }
+
+  #footer .inner {
+    padding: 10px;
+  }
+
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+    border-bottom: 2px solid black;
+  }
+
+  #content a, #content a:visited {
+    color: black;
+  }
+
+  #content img, #content svg {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  #content .pageurl {
+    display: block;
+    font-style: italic;
+  }
+
+  #content-sidebar {
+    color: black;
+    width: auto;
+    float: none;
+    line-height: 1.5em;
+    min-height: 0px;
+    padding: 10px 10px 10px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  #content-sidebar .section {
+    font-size: 24px;
+  }
+
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+#content-sidebar-inner.fixed {
+  position: static;
+}
+
+  h1 {
+    color: black;
+  }
+}
+</style>
+<script>
+function update() {
+var e = document.getElementById('content-sidebar');
+var f = document.getElementById('content-sidebar-inner');
+var r = e.getBoundingClientRect();
+if (r.top < 120.0) {
+f.classList.add('fixed');
+f.style.top = 120.0;
+} else {
+  f.classList.remove('fixed');
+}
+
+}
+window.addEventListener('scroll', update);
+window.addEventListener('resize', update);
+function update2() {
+var e = document.body;
+if (document.body.scrollTop > 100) {
+  e.classList.add('shrink');
+} else {
+  e.classList.remove('shrink');
+}
+
+}
+window.addEventListener('scroll', update2);
+window.addEventListener('resize', update2);
+</script>
+</head>
+<body>
+<div id="header-placeholder">
+<div id="header-outer">
+<div class="wrapper">
+	<div id="header">
+		<span id="logo">
+			<a href = "/"><img src="/logo.svg" alt="Aluda Pharmaceuticals, Inc." /></a>
+      <div id="header-hamburger-wrapper">
+        <div id="header-hamburger" onclick="document.body.classList.toggle('menu-open')">
+          &#x2630;
+        </div>
+      </div>
+		</span>
+		<div id="navigation">
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/">Company</a>
+          <div class = "navigation-dropdown">
+            <a href = "/">Overview</a>
+            <a href = "/company/news.html">News</a>
+            <a href = "/company/team.html">Management</a>
+            <a href = "/company/careers.html">Careers</a>
+          </div>
+        </span>
+      </span>
+      <span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/science">Science</a>
+            <div class = "navigation-dropdown">
+              <a href = "/science/vimentin.html">Vimentin</a>
+              <a href = "/science/stat3.html">STAT3</a>
+              <a href = "/science/publications.html">Aluda Publications</a>
+            </div>
+        </span>
+      </span>
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/pipeline">Pipeline</a>
+        </span>
+      </span>
+			<span class="navigation-item"><a class="item" href="/partnering">Partnering</a></span>
+			<span class="navigation-item"><a class="item" href="/contact">Contact</a></span>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div id="location-bar" class="bar index-page">
+	<div class="wrapper">
+		<div class = "inner">
+			<a href = "/pipeline/index.html">Pipeline</a>
+		</div>
+	</div>
+</div>
+<div class="wrapper hide-navigation">
+	<div id="content-sidebar">
+		<div id = "content-sidebar-inner">
+			<div class = "section">Pipeline</div><div class = "subsection selected"><span class = "arrow"></span><a href = "/pipeline/index.html#">Overview</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/autoimmune-treg.html">Autoimmune Treg Activator</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/fibrosis.html">Fibrosis (lung and liver)</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/cancer-signaling.html">Cancer Signaling</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/stat3.html">Novel TLR4 agonist-STAT3 P705 activator</a></div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Pipeline Overview</h1>
+		<style>
+   .pipeline-graph {
+      --pipeline-navy: #254061;
+      --pipeline-blue: #0c2f74;
+      --pipeline-border: rgba(37, 64, 97, 0.8);
+      overflow-x: auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      background: #ffffff;
+      font-family: 'Source Sans Pro', sans-serif;
+      border: 1px solid #d3d3d3;
+      border-radius: 4px;
+      margin-bottom: 24px;
+   }
+
+   .pipeline-graph .pipeline-container {
+      min-width: 1375px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+   }
+
+   @media (max-width: 900px) {
+      .pipeline-graph {
+         padding: 10px;
+      }
+
+      .pipeline-graph .pipeline-container {
+         zoom: 0.6;
+         transform: scale(0.6);
+         transform-origin: top left;
+         width: 166.666%;
+      }
+
+      @supports (zoom: 0.6) {
+         .pipeline-graph .pipeline-container {
+            transform: none;
+            width: 100%;
+         }
+      }
+   }
+
+   .pipeline-graph .pipeline-header {
+      display: grid;
+      grid-template-columns: 210px 140px 1fr 360px;
+      align-items: flex-end;
+      margin-bottom: 6px;
+   }
+
+   .pipeline-graph .stages-header {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      text-align: center;
+      font-weight: 700;
+      font-size: 18.5px;
+      color: #000000;
+   }
+
+   .pipeline-graph .stages-header span {
+      padding: 0 2px;
+   }
+
+   .pipeline-graph .header-target-note {
+      text-align: center;
+      font-size: 17.5px;
+      line-height: 1.35;
+      color: var(--pipeline-navy);
+   }
+
+   .pipeline-graph .pipeline-section {
+      display: grid;
+      grid-template-columns: 210px 1fr 360px;
+      border: 1px solid var(--pipeline-border);
+      padding: 22px 18px;
+      align-items: center;
+      background: #ffffff;
+   }
+
+   .pipeline-graph .category-col h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: #000000;
+      line-height: 1.35;
+      padding-right: 18px;
+   }
+
+   .pipeline-graph .bars-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+   }
+
+   .pipeline-graph .bar-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      align-items: center;
+      height: 46px;
+   }
+
+   .pipeline-graph .pill-cell {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+   }
+
+   .pipeline-graph .pill-badge {
+      display: inline-block;
+      border: 1.5px solid var(--pipeline-blue);
+      border-radius: 6px;
+      color: var(--pipeline-blue);
+      font-size: 18px;
+      font-weight: 600;
+      padding: 6px 16px;
+      text-align: center;
+      white-space: nowrap;
+   }
+
+   .pipeline-graph .bar-cell {
+      position: relative;
+      width: 100%;
+      height: 46px;
+      display: flex;
+      align-items: center;
+   }
+
+   .pipeline-graph .chart-bar {
+      height: 44px;
+      background-color: var(--pipeline-navy);
+      clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+      display: flex;
+      align-items: center;
+      padding-left: 14px;
+      padding-right: 28px;
+      color: #ffffff;
+      font-size: 17px;
+      white-space: nowrap;
+      box-sizing: border-box;
+   }
+
+   /* Exact Stage Arrow Tip Alignments */
+   .pipeline-graph .bar-crohns-sepsis {
+      width: 67%;
+   }
+
+   .pipeline-graph .bar-lung {
+      width: 78%;
+   }
+
+   .pipeline-graph .bar-poc {
+      width: 48%;
+   }
+
+   .pipeline-graph .bar-fda {
+      width: 58%;
+   }
+
+   .pipeline-graph .bar-cov {
+      width: 56%;
+   }
+
+   .pipeline-graph .bar-pathogen {
+      width: 63%;
+   }
+
+   .pipeline-graph .bar-cancer {
+      width: 72%;
+   }
+
+   .pipeline-graph .clickable-section {
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+   }
+
+   .pipeline-graph .clickable-section:hover {
+      background-color: #f7f9fc;
+      border-color: #0c2f74;
+   }
+
+   .pipeline-graph .clickable-section:hover .category-col h3,
+   .pipeline-graph .clickable-section:hover .link-more,
+   .pipeline-graph .clickable-section:hover .bar-text {
+      text-decoration: underline;
+   }
+
+   .pipeline-graph .clickable-row {
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.15s ease;
+   }
+
+   .pipeline-graph .clickable-row:hover {
+      background-color: rgba(37, 64, 97, 0.08);
+   }
+
+   .pipeline-graph .clickable-row:hover .link-more,
+   .pipeline-graph .clickable-row:hover .bar-text,
+   .pipeline-graph .clickable-row:hover .bar-link {
+      text-decoration: underline;
+   }
+
+   .pipeline-graph .category-link {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: #000000;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: none;
+   }
+
+   .pipeline-graph .category-link:hover,
+   .pipeline-graph .category-link:hover .link-more {
+      text-decoration: underline;
+   }
+
+   .pipeline-graph .bar-link,
+   .pipeline-graph .bar-text {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+   }
+
+   .pipeline-graph .bar-link {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: #ffffff;
+      cursor: pointer;
+      text-align: left;
+   }
+
+   .pipeline-graph .bar-link:hover .link-more,
+   .pipeline-graph .bar-link:hover {
+      text-decoration: underline;
+   }
+
+   .pipeline-graph .link-more {
+      text-decoration: underline;
+   }
+
+   .pipeline-graph .benefits-col {
+      padding-left: 32px;
+      color: var(--pipeline-navy);
+      font-size: 18.5px;
+      line-height: 1.5;
+   }
+
+   .pipeline-graph .benefits-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+
+   .pipeline-graph .benefits-col li {
+      margin-bottom: 4px;
+   }
+
+   .pipeline-graph .benefits-col li:last-child {
+      margin-bottom: 0;
+   }
+
+   #content-sidebar {
+      width: auto;
+      float: none;
+      line-height: 1.8em;
+      min-height: 0px;
+      margin-top: 0px !important;
+      padding: 10px 10px 10px 10px;
+      border-bottom: 1px solid #0c2f74;
+      margin-right: 0 !important;
+   }
+
+   #content-sidebar .section {
+      display: none;
+   }
+
+   #content-sidebar .subsection {
+      font-size: 18px;
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   #content-sidebar-inner {
+      width: auto;
+   }
+
+   #content-sidebar-inner.fixed {
+      position: static;
+   }
+
+   #content {
+      margin: 0 0 0 0;
+      border: none;
+      min-height: 0;
+   }
+</style>
+
+<section class="pipeline-graph" aria-label="Pipeline Overview Chart">
+   <div class="pipeline-container">
+      <!-- Header Row -->
+      <header class="pipeline-header">
+         <div></div>
+         <div></div>
+         <div class="stages-header">
+            <span>Discovery</span>
+            <span>Preclinical</span>
+            <span>POC efficacy</span>
+            <span>FDA</span>
+            <span>Phase 1</span>
+            <span>NDA</span>
+         </div>
+         <div class="header-target-note">
+            Target populations are<br>severe, refractory disease
+         </div>
+      </header>
+
+      <!-- Section 1: Inflammatory Bowel Diseases -->
+      <article class="pipeline-section clickable-section"
+         onclick="document.getElementById('crohns-popup').classList.add('active');"
+         tabindex="0"
+         role="button"
+         aria-haspopup="dialog"
+         aria-label="Expand Inflammatory Bowel Diseases details">
+         <div class="category-col">
+            <h3>Inflammatory Bowel<br>Diseases <span class="link-more">[more]</span></h3>
+         </div>
+         <div class="bars-col">
+            <div class="bar-row">
+               <div class="pill-cell"><span class="pill-badge">ALD-R491</span></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-crohns-sepsis">
+                     <span class="bar-text">Crohn&rsquo;s with Fibrosis (FSCD)</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="benefits-col">
+            <ul>
+               <li>✓ Block fibrotic progression</li>
+               <li>✓ Resolve non-responsive inflammation</li>
+               <li>✓ Prevent endothelial or organ damage</li>
+            </ul>
+         </div>
+      </article>
+
+      <!-- Section 2: Other Autoimmune -->
+      <article class="pipeline-section">
+         <div class="category-col">
+            <h3>Other Autoimmune</h3>
+         </div>
+         <div class="bars-col">
+            <div class="bar-row clickable-row"
+               onclick="document.getElementById('fibrotic-popup').classList.add('active');"
+               tabindex="0"
+               role="button"
+               aria-haspopup="dialog"
+               aria-label="Expand Multiple Sclerosis details">
+               <div class="pill-cell"><span class="pill-badge">ALD-R4XX</span></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-poc">
+                     <span class="bar-link">Multiple Sclerosis <span class="link-more">[more]</span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="bar-row clickable-row"
+               onclick="document.getElementById('fibrotic-popup').classList.add('active');"
+               tabindex="0"
+               role="button"
+               aria-haspopup="dialog"
+               aria-label="Expand Other Autoimmune with Fibrosis details">
+               <div class="pill-cell"><span class="pill-badge">ALD-R491</span></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-lung">
+                     <span class="bar-link">Other Autoimmune with Fibrosis <span class="link-more">[more]</span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="bar-row">
+               <div class="pill-cell"><span class="pill-badge">ALD-R5XX</span></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-poc">
+                     <span class="bar-text">Type 1 Diabetes</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="benefits-col">
+            <ul>
+               <li>✓ Block fibrotic progression</li>
+               <li>✓ Resolve non-responsive inflammation</li>
+               <li>✓ Restore function</li>
+            </ul>
+         </div>
+      </article>
+
+      <!-- Section 3: Severe infections -->
+      <article class="pipeline-section">
+         <div class="category-col">
+            <h3>Severe infections<br>w/life-threatening<br>immune dysregulation</h3>
+         </div>
+         <div class="bars-col">
+            <div class="bar-row clickable-row"
+               onclick="document.getElementById('sepsis-popup').classList.add('active');"
+               tabindex="0"
+               role="button"
+               aria-haspopup="dialog"
+               aria-label="Expand Sepsis details">
+               <div class="pill-cell"><span class="pill-badge">ALD-RXXX</span></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-crohns-sepsis">
+                     <span class="bar-link">Sepsis <span class="link-more">[more]</span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="bar-row">
+               <div class="pill-cell"></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-pathogen">
+                     <span class="bar-text">Novel pan-pathogen threats (viral, bacterial, fungal)</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="benefits-col">
+            <ul>
+               <li>✓ Clear <em>all</em> pathogens from tissue</li>
+               <li>✓ Block viral entry, egress</li>
+               <li>✓ Reduce overstimulation in immune<br>&nbsp;&nbsp;&nbsp;&nbsp;response, catabolism, increasing
+                  survival</li>
+            </ul>
+         </div>
+      </article>
+
+      <!-- Section 4: Cancer communication -->
+      <article class="pipeline-section clickable-section"
+         onclick="window.location.href='/pipeline/cancer-signaling.html';"
+         tabindex="0"
+         role="link"
+         aria-label="View Cancer Signaling details">
+         <div class="category-col">
+            <h3><a href="/pipeline/cancer-signaling.html" style="color: inherit; text-decoration: inherit;">Cancer communication <span class="link-more">[more]</span></a></h3>
+         </div>
+         <div class="bars-col">
+            <div class="bar-row">
+               <div class="pill-cell"><span class="pill-badge">ALD-R491</span></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-cancer">
+                     <span class="bar-link">Refractory I-O</span>
+                  </div>
+               </div>
+            </div>
+            <div class="bar-row">
+               <div class="pill-cell"></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-cancer">
+                     <span class="bar-link">Patients with rapid cachexic progression</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="benefits-col">
+            <ul>
+               <li>✓ Address refractory or aggressive cases</li>
+            </ul>
+         </div>
+      </article>
+
+      <!-- Section 5: New target discovery -->
+      <article class="pipeline-section">
+         <div class="category-col">
+            <h3>New target discovery</h3>
+         </div>
+         <div class="bars-col">
+            <div class="bar-row">
+               <div class="pill-cell"></div>
+               <div class="bar-cell">
+                  <div class="chart-bar bar-cancer">
+                     <span class="bar-text">Aluda novel screening</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="benefits-col">
+            <ul>
+               <li>✓ Novel indications in severe stage disease</li>
+            </ul>
+         </div>
+      </article>
+   </div>
+</section>
+<hr>
+<div class='modal-box' id='crohns-popup'>
+   <a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class='close'>&#x2716;</a>
+   <h2>ALD-R491 in Crohn&rsquo;s disease</h2>
+   <ul>
+      <li>Blocks the 5 main disease features created by vimentin over-stimulation</li>
+      <li>Achieves highest statistical significance in multiple colitis models</li>
+      <li>Provides clear evidence that eliminating vimentin-linked over-stimulations normalized immune, repair,
+         fibrosis, biome</li>
+      <li>Is peer-reviewed, validated (Wu et al. 2021)</li>
+      <li>Most differentiated from all peers: use of an IL-10 KO model extended for a longer duration (16 weeks, versus
+         typical 6-9) creating a significantly higher disease challenge.</li>
+      <li>When disease reached highest severity, showed most dramatic benefits. Why? Resolving all the parts is more
+         precise, complete and successful relative to only resolving inflammation (see Wynn 2010).</li>
+      <li>ALD-R491 actions may apply to other indications within IBD</li>
+   </ul>
+   <h3>References</h3>
+   <ol>
+      <li>Wu J et al. Therapeutic targeting of vimentin by ALD-R491 impacts multiple pathogenic processes to attenuate
+         acute and chronic colitis in mice. Biomed Pharmacother (Dec 2023).</li>
+      <li>Henderson, P. et al. A Role for Vimentin in Crohn&rsquo;s Disease. Autophagy. (2012).</li>
+      <li>Mor-Vaknin, N. et al. Murine Colitis is Mediated by Vimentin. Sci Rep. (2013).</li>
+   </ol>
+</div>
+
+
+<hr>
+<div class='modal-box' id='fibrotic-popup'>
+   <a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class='close'>&#x2716;</a>
+   <h2>ALD-R491 in other immune diseases with potential Fibrotic complications</h2>
+   <ol>
+      <li>ALD-R491 has a broad package showing statistically significant data in lung fibrosis, proving it matches multiple third party papers identifying specific roles of vimentin in over-active fibrotic processes:
+         <ul>
+            <li>Lung fibrosis cannot form in a Bleomycin mouse if vimentin is degraded or ablated</li>
+            <li>Autophagic clearance of excess collagen is dysregulated in disease</li>
+            <li>Collagen mRNA requires use of vimentin as a scaffold</li>
+            <li>Fibroblast invasiveness is regulated by vimentin, and can only reach excessive pathological levels if vimentin is present</li>
+            <li>Vimentin is required for the NLRP3 inflammasome to activate</li>
+            <li>Inflammation that does not respond to existing anti-inflammatory pathway target has been shown to have a dysregulation of vimentin partition in T regulatory cells first published by Michael Dustin, Director at Oxford Kennedy Center for Immunology</li>
+         </ul>
+      </li>
+      <li>ALD-R491 also has evidence that dampening vimentin's role in creating overactive processes and pathologies in the above list offers a novel approach to Liver Fibrosis, Multiple Sclerosis, Graft versus Host Disease, Type 1 Diabetes, and Lupus</li>
+   </ol>
+</div>
+
+<hr>
+<div class='modal-box' id='sepsis-popup'>
+   <a href="javascript: void(0);" onclick="this.parentNode.classList.remove('active');" class='close'>&#x2716;</a>
+   <h2>Sepsis and severe infections with immune complications</h2>
+   <ul>
+      <li>Sepsis causes more deaths than the 6 deadliest cancers combined, leads to high long-term disability, and is the largest expense for hospital and public health systems worldwide</li>
+      <li>Infection triggers sepsis, but when antibiotics don&rsquo;t resolve it, a chaotic dysregulation of immune and other systems drives death <em>and</em> also long-term disability</li>
+      <li>Recently, leading academics presented a <a href="https://pubmed.ncbi.nlm.nih.gov/36906606/" target="_blank">new understanding</a> of the therapeutic challenge in sepsis that led to a history of failures and offers a new and clear requirement for success in drug development:
+         <ul>
+            <li>Analyzed 20 years of data and observed it has many processes in overactive state, with unpredictable timing, and oppositional goals (i.e. simultaneous inflammation and immune suppression)</li>
+            <li>Conclusion “drugs with single-action target biology” had to fail and success will require “drugs with wider actions [more parts at once]”</li>
+            <li>Vimentin operates as an amplifier for all key steps, and is key to all critical <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12565683/" target="_blank">over-active processes</a> in sepsis and offers a new solution</li>
+            <li>ALD-R491 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8510534/" target="_blank">data shows</a> removing the pathological amplification by vimentin, dampens overactive immune processes on both ‘sides&rsquo;, restores organ function, promotes tissue healing, clears residual pathogens in tissues (not circulating, so not accessible by antibiotics)</li>
+         </ul>
+      </li>
+      <li>The above ‘system wide&rsquo; rebalancing action is beneficial to any setting of highly dysregulated immune disease. This includes H. pylori and E. coli in gut dysbiosis in Crohn&rsquo;s as well as cases where anti-inflammatory drugs produce oversuppression and rising rate of infection from <a href="https://pubmed.ncbi.nlm.nih.gov/27423069/" target="_blank">existing pathogens</a> known to sequester (HSV, HPV, HIV, Flu, EBV, HBV, Adeno, <a href="https://pubmed.ncbi.nlm.nih.gov/32913008/" target="_blank">CoV2</a> all have steps that rely on vimentin).</li>
+      <li>A list of emerging pathogens is suspected to use vimentin (H9N2, Chandipura, Foot and Mouth, Cowpea mosaic virus, Bluetongue, African swine, Monkey pox, CoV3) and <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8510534/" target="_blank">published data</a> suggests ALD-R491 could reduce pace and intensity of infection and reduce mortality.</li>
+   </ul>
+</div>
+		<p class = "pageurl">This document was printed from <a href="http://www.aludapharm.com/pipeline/index.html">http://www.aludapharm.com/pipeline/index.html</a></p>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class = "inner">
+      <span id = 'social-buttons'>
+        <a href = "https://twitter.com/aluda_pharm" target="_blank"><img src="/company/x.svg" alt="Aluda on X"></a>
+        <a href = "https://www.linkedin.com/company/aluda-pharmaceuticals-inc."  target="_blank"><img src="/company/linkedin.svg"alt="Aluda on LinkedIn"></a>
+      </span>
+			<b>Aluda Pharmaceuticals, Inc.</b><br/>
+			Tel: +1 (650) 260-5860</a><br/>
+			Email: <a href="mailto:info@aludapharm.com">info@aludapharm.com</a><br/><br/>
+			&copy; Aluda Pharmaceuticals, Inc.  All rights reserved.
+		</div>
+	</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136955566-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136955566-1');
+</script>
+</body>
+</html>

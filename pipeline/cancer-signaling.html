@@ -1,0 +1,998 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Cancer Signaling - Aluda Pharmaceuticals, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+<link rel="prefetch" href="/company/background-full.jpg" />
+<link rel="prefetch" href="/company/background-tall.jpg" />
+<link rel="prefetch" href="/company/x.svg" />
+<link rel="prefetch" href="/company/linkedin.svg" />
+<link rel="prefetch" href="/logo.svg" />
+<link rel="prefetch" href="background.jpg" />
+<style>
+*, html {
+scroll-behavior: smooth !important;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#logo img {
+  height: 90px;
+  transition: height 0.25s;
+}
+.shrink #logo img {
+  height: 70px;
+}
+a, a:visited, a:active {
+	color: #0c2f74;
+}
+.wrapper {
+	margin: auto;
+	min-width: 1045px;
+	max-width: 1125px;
+  max-width: 1600px;
+}
+#header {
+	padding: 26px 9px 26px 9px;
+  transition: padding 0.25s;
+}
+.shrink #header {
+	padding: 16px 9px 16px 9px;
+}
+#header-outer {
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+#header-placeholder {
+  width: 100%;
+  height: 142px;
+}
+#header-hamburger-wrapper {
+  display: none;
+}
+#footer {
+	background: #0c2f74;
+/*	width: max-content;*/
+	color: #bbc7e0;
+	font-size: 18px;
+}
+#footer .inner {
+  padding: 26px 9px 26px 9px;
+}
+#footer a {
+	color: inherit;
+}
+#social-buttons {
+  float: right;
+}
+#social-buttons img {
+  padding: 8px;
+  width: 48px;
+  opacity: 0.8;
+}
+#social-buttons img:hover {
+  opacity: 1.0;
+}
+#navigation {
+	float: right;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+  
+  transition: height 0.25s, line-height 0.25s;
+}
+.shrink #navigation {
+	height: 70px;
+	line-height: 70px;
+}
+#navigation * {
+  margin: 0;
+}
+.navigation-item {
+  position: relative;
+  display: inline-block;
+	font-size: 27px;
+	font-weight: 600;
+	color: #0c2f74;
+	margin: 0 3px 0 3px;
+}
+.navigation-item a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation-item a.item {
+	padding: 9px 14px 9px 14px;
+	border-radius: 4px;
+}
+.navigation-item .navigation-wrapper:hover a.item, .navigation-item a.item:hover, .navigation-item a.item:active,
+.navigation-item .navigation-wrapper .navigation-dropdown a:hover,
+.navigation-item .navigation-wrapper .navigation-dropdown a:active{
+	background: #0c2f74;
+	color: white;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+.navigation-item .navigation-wrapper:hover .navigation-dropdown {
+  display: block;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.navigation-item .navigation-wrapper .navigation-dropdown {
+  display: none;
+  background: white;
+  border: 2px solid #0c2f74;
+  line-height: 44px;
+  padding: 8px 0px 8px 0px;
+  position: absolute;
+  z-index: 10;
+  top: 68px;
+  left: 0px;
+  min-width: 225px;
+  transition: top 0.25s;
+}
+.shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+  top: 58px;
+}
+.navigation-item .navigation-wrapper .navigation-dropdown a {
+  display: block;
+  background: transparent;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 4px 14px 4px 14px;
+  color: #0c2f74;
+  white-space: nowrap;
+}
+.subsection .arrow::before {
+    content:'-\00a0\00a0\00a0\00a0'
+}
+.subsection.selected .arrow::before {
+    content:'›\00a0\00a0\00a0\00a0'
+}
+/*.navigation-item .navigation-wrapper .navigation-dropdown a::before {
+  content: "-\a0\a0\a0 ";
+}*/
+#location-bar {
+	clear: both;
+	background: #0c2f74;
+	/*width: max-content;*/
+	color: white;
+	font-size: 20px;
+}
+#location-bar.index-page, #location-bar {
+  /*background-image: url('/company/background.jpg');*/
+  background-repeat: no-repeat;
+  background-color: #0c2f74;
+  box-shadow: inset 0px 10px 15px -15px #0c2f74;;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  height: 300px;
+  background-image: url('background.jpg');
+  transition: background-position 0.5s;
+}
+.shrink #location-bar.index-page, .shrink #location-bar{
+  background-position: 50%  calc(50% + 20px);
+}
+#location-bar .wrapper > .inner {
+	padding: 8px 9px 9px 9px;
+}
+#location-bar.index-page .inner, #location-bar .wrapper > .inner {
+  padding-top: 225px;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #0c2f74;
+  line-clamp: 1;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#location-bar a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+}
+#location-bar a:hover {
+	text-decoration: underline;
+}
+h1 {
+	color: #0c2f74;
+	font-weight: bold;
+	font-size: 30px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-left: -2px;
+    line-height: 1.2em;
+    scroll-padding-top: 10px;
+}
+h2 {
+  color: #0c2f74;
+	font-weight: bold;
+	font-size: 26px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    scroll-padding-top: 10px;
+}
+h3 {
+  color: #0c2f74;
+  scroll-padding-top: 10px;
+}
+#content {
+	margin-right: 300px;
+	padding-left: 9px;
+	padding-right: 18px;
+	padding-bottom: 1px;
+	margin-bottom: 18px;
+	border-right: 2px solid #0c2f74;
+	min-height: 600px;
+}
+#content img, #content svg {
+	max-width: 100%;
+  height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content, #content p {
+	font-size: 19px;
+	line-height: 1.4em;
+	/* line-height: 1.6em; */
+}
+#content .pageurl {
+  display: none;
+}
+/*.hide-navigation #content-sidebar {
+  display: none;
+}
+.hide-navigation #content {
+  border-right: none;
+}*/
+.hide-navigation #content-sidebar .section {
+  display: none;
+}
+.hide-navigation #content-sidebar {
+  margin-top: -10px;
+}
+#content .clear {
+	clear: both;
+	margin: 64px;
+}
+#content-sidebar {
+	width: 270px;
+	min-height: 400px;
+	float: right;
+	color: #0c2f74;
+	line-height: 1.8em;
+  margin-right: 9px;
+}
+#content-sidebar a {
+	color: inherit;
+	text-decoration: none;
+}
+#content-sidebar a:hover {
+	text-decoration: underline;
+}
+#content-sidebar .section {
+  padding-top: 10px;
+	font-size: 26px;
+	font-weight: bold;
+}
+#content-sidebar .subsection {
+	font-size: 22px;
+	padding-left: 25px ;
+	text-indent: -25px ;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+#content-sidebar .subsection.selected {
+  font-weight: 600;
+}
+#content-sidebar-inner {
+  width: 270px;
+}
+#content-sidebar-inner.fixed {
+  position: fixed;
+}
+#content-sidebar .subsection .arrow {
+}
+
+
+.modal-box.hide{
+  display: none;
+}
+.modal-box.active{
+  display: block !important;
+  border: 2px solid #0c2f74;
+    padding: 16px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow-y: scroll;
+    z-index: 200;
+}
+.modal-box .close {
+  display: none;
+}
+.modal-box.active .close{
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  text-decoration: none;
+}
+.modal-box h1 {
+  margin-top: 0px;
+}
+
+/*@media only screen and (max-width: 1000px) {
+  #logo {
+    display: block;
+  }
+  #navigation {
+    float: none;
+    text-align: center;
+  }
+  .navigation-item {
+    font-size: 20px !important;
+  }
+}*/
+@media only screen and (max-width: 1200px) {
+  #logo img {
+    height: 75px;
+  }
+  .shrink #logo img {
+    height: 60px;
+  }
+  #navigation {
+    height: 75px;
+    line-height: 75px;
+  }
+  #header-placeholder {
+    height: 127px;
+  }
+  .shrink #navigation {
+    height: 60px;
+    line-height: 60px;
+  }
+  .navigation-item {
+    font-size: 24px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown {
+    line-height: 48px;
+    top: 58px;
+    min-width: 250px;
+  }
+  .shrink .navigation-item .navigation-wrapper .navigation-dropdown {
+    top: 53px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown a {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 4px 16px 4px 16px;
+  }
+  .wrapper {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1250px;
+  }
+  #content, #location-bar .wrapper > .inner, #header, #footer .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #content-sidebar {
+    line-height: 1.8em;
+    margin-right: 24px;
+    width: 255px;
+  }
+  #content-sidebar .section {
+    font-size: 22px;
+  }
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {/*was 768*/
+  body {
+  }
+  #logo {
+    transition: padding 0.5s;
+  }
+  #logo img{
+  	height: 60px;
+  }
+  .shrink #logo img {
+  	height: 50px;
+  }
+  .shrink #logo {
+    padding: 10px;
+  }
+  .wrapper {
+  	min-width: 0;
+  	max-width: none;
+  }
+  #header-outer {
+    /* position: static; */
+  }
+  #header-placeholder {
+    height: 100px;
+  }
+  #header, .shrink #header {
+  	padding: 0;
+  }
+  #header-hamburger-wrapper {
+    display: block;
+    float: right;
+  }
+  #header-hamburger {
+    display: block;
+    border: 1px solid #0c2f74;
+    padding: 9px 14px 9px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    height: 28px;
+    margin: 5px;
+    transition: margin 0.5s;
+  }
+  .shrink #header-hamburger {
+    margin: 0;
+  }
+  #header-hamburger:hover, .menu-open #header-hamburger {
+    background: #0c2f74;
+    color: #ffffff;
+  }
+  #navigation {
+    display: none;
+  }
+  .menu-open #navigation {
+    display: block;
+  }
+  #footer {
+    font-size: 18px;
+  }
+  #footer .inner {
+    padding: 20px 24px 20px 24px;
+  }
+#social-buttons img {
+  padding: 8px;
+  width: 32px;
+}
+  #logo {
+  	display: block;
+  	padding: 20px;
+  }
+  #navigation, .shrink #navigation {
+  	float: none;
+  	height: auto;
+  	line-height: inherit;
+    margin-bottom: 10px;
+  }
+  #navigation .navigation-item {
+  	/*padding: 4px 0 4px 0;*/
+  	font-size: 20px;
+    text-align: center;
+  }
+  .hide-navigation #content-sidebar {
+    margin-top: 0;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown,
+  .navigation-item .navigation-wrapper:hover .navigation-dropdown {
+    display: none !important;
+  }
+  #navigation .navigation-item a.item {
+  border-top: 1px solid #0c2f74;
+    display: block;
+    border-radius: 0;
+    padding: 10px;
+  }
+  #navigation .navigation-item {
+    display: block;
+  }
+  #navigation .navigation-item:last-child a.item {
+    border-bottom: 1px solid #0c2f74;
+  }
+  #location-bar {
+    font-size: 20px;
+  }
+  #content-sidebar {
+    width: auto;
+  	float: none;
+  	line-height: 1.8em;
+  	min-height: 0px;
+  	padding: 10px 10px 10px 10px;
+  	border-bottom: 1px solid #0c2f74;
+    margin-right: 0 !important;
+  }
+  #content-sidebar .section {
+  	display: none;
+  }
+  #content-sidebar .subsection {
+  	font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #content-sidebar-inner {
+      width: auto;
+  }
+  #content-sidebar-inner.fixed {
+    position: static;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+  }
+  #content, #content p {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+  #location-bar.index-page, #location-bar {
+    height: 200px;
+  }
+  #location-bar.index-page > .wrapper > .inner, #location-bar > .wrapper >  .inner {
+    padding-top: 140px;
+    font-size: 32px;
+  }
+  #location-bar {
+		/* padding-top: 0 !important; */
+		/* margin-top: 0 !important; */
+    /* background-position: 50% 50% !important; */
+  }
+}
+@media print {
+  #navigation {
+    display: none;
+  }
+#header-outer {
+  position: static;
+}
+
+  #location-bar, #footer {
+    background: white;
+    color: black;
+  }
+  #location-bar {
+    display: none;
+  }
+  #header {
+    padding: 10px;
+  }
+
+  #footer .inner {
+    padding: 10px;
+  }
+
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+    border-bottom: 2px solid black;
+  }
+
+  #content a, #content a:visited {
+    color: black;
+  }
+
+  #content img, #content svg {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  #content .pageurl {
+    display: block;
+    font-style: italic;
+  }
+
+  #content-sidebar {
+    color: black;
+    width: auto;
+    float: none;
+    line-height: 1.5em;
+    min-height: 0px;
+    padding: 10px 10px 10px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  #content-sidebar .section {
+    font-size: 24px;
+  }
+
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+#content-sidebar-inner.fixed {
+  position: static;
+}
+
+  h1 {
+    color: black;
+  }
+}
+</style>
+<script>
+function update() {
+var e = document.getElementById('content-sidebar');
+var f = document.getElementById('content-sidebar-inner');
+var r = e.getBoundingClientRect();
+if (r.top < 120.0) {
+f.classList.add('fixed');
+f.style.top = 120.0;
+} else {
+  f.classList.remove('fixed');
+}
+
+}
+window.addEventListener('scroll', update);
+window.addEventListener('resize', update);
+function update2() {
+var e = document.body;
+if (document.body.scrollTop > 100) {
+  e.classList.add('shrink');
+} else {
+  e.classList.remove('shrink');
+}
+
+}
+window.addEventListener('scroll', update2);
+window.addEventListener('resize', update2);
+</script>
+</head>
+<body>
+<div id="header-placeholder">
+<div id="header-outer">
+<div class="wrapper">
+	<div id="header">
+		<span id="logo">
+			<a href = "/"><img src="/logo.svg" alt="Aluda Pharmaceuticals, Inc." /></a>
+      <div id="header-hamburger-wrapper">
+        <div id="header-hamburger" onclick="document.body.classList.toggle('menu-open')">
+          &#x2630;
+        </div>
+      </div>
+		</span>
+		<div id="navigation">
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/">Company</a>
+          <div class = "navigation-dropdown">
+            <a href = "/">Overview</a>
+            <a href = "/company/news.html">News</a>
+            <a href = "/company/team.html">Management</a>
+            <a href = "/company/careers.html">Careers</a>
+          </div>
+        </span>
+      </span>
+      <span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/science">Science</a>
+            <div class = "navigation-dropdown">
+              <a href = "/science/vimentin.html">Vimentin</a>
+              <a href = "/science/stat3.html">STAT3</a>
+              <a href = "/science/publications.html">Aluda Publications</a>
+            </div>
+        </span>
+      </span>
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/pipeline">Pipeline</a>
+        </span>
+      </span>
+			<span class="navigation-item"><a class="item" href="/partnering">Partnering</a></span>
+			<span class="navigation-item"><a class="item" href="/contact">Contact</a></span>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div id="location-bar" class="bar">
+	<div class="wrapper">
+		<div class = "inner">
+			<a href = "/pipeline">Pipeline</a> &nbsp;&rsaquo;&nbsp; <a href = "/pipeline/cancer-signaling.html">Cancer Signaling</a>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="content-sidebar">
+		<div id = "content-sidebar-inner">
+			<div class = "section">Pipeline</div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/index.html">Overview</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/autoimmune-treg.html">Autoimmune Treg Activator</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/fibrosis.html">Fibrosis (lung and liver)</a></div><div class = "subsection selected"><span class = "arrow"></span><a href = "/pipeline/cancer-signaling.html#">Cancer Signaling</a></div><div class = "subsection"><span class = "arrow"></span><a href = "/pipeline/stat3.html">Novel TLR4 agonist-STAT3 P705 activator</a></div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Cancer Signaling</h1>
+		<style>
+.ea-box {
+    margin: 36px 0 30px 0;
+    padding: 24px 28px;
+    background: #edf5fc;
+    border: 1px solid rgba(12, 47, 116, 0.15);
+    border-left: 5px solid #0c2f74;
+    border-radius: 4px 8px 8px 4px;
+    box-shadow: 0 3px 12px rgba(12, 47, 116, 0.06);
+}
+.ea-box-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #0c2f74;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+}
+.ea-box p {
+    font-size: 21px !important;
+    line-height: 1.65em !important;
+    color: #162438;
+    margin: 0 !important;
+}
+.ea-inline-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.ea-inline-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #dbeaf8;
+    color: #0c2f74 !important;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 3px 12px 4px 14px;
+    margin: 0 2px;
+    border-radius: 6px;
+    border: 1.5px solid #8cbbe8;
+    cursor: pointer;
+    text-decoration: none !important;
+    vertical-align: baseline;
+    box-shadow: 0 1px 3px rgba(12, 47, 116, 0.08);
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+    line-height: 1.35;
+}
+.ea-inline-btn:hover {
+    background-color: #cae2f8;
+    border-color: #0c2f74;
+    color: #0c2f74 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(12, 47, 116, 0.18);
+}
+.ea-inline-btn:hover svg.icon-copy {
+    transform: scale(1.12);
+}
+.ea-inline-btn:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 6px rgba(12, 47, 116, 0.12);
+}
+.ea-inline-btn svg.icon-copy {
+    width: 17px;
+    height: 17px;
+    fill: #0c2f74;
+    flex-shrink: 0;
+    margin: 0 !important;
+    transition: transform 0.2s ease;
+}
+.ea-tooltip {
+    position: absolute;
+    bottom: calc(100% + 7px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background-color: #0c2f74;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 10;
+}
+.ea-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: #0c2f74 transparent transparent transparent;
+}
+.ea-tooltip svg {
+    width: 15px;
+    height: 15px;
+    fill: #4ade80;
+    margin: 0 !important;
+}
+.ea-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+</style>
+
+<h2>A new approach blocking the upregulation of Tumor Released Exosomes (TRE)</h2>
+
+<p>Exosomes are small extracellular vesicles that originate in and are shed from cancer cells to carry out, or influence, almost all pathogenic actions of tumor cells:</p>
+<ul>
+    <li>Transport pro-cancer materials to other cells (proteins, mRNAs, ncRNAs, etc.) without detection (hide as &ldquo;self&rdquo;)</li>
+    <li>Build and maintain the Tumor Micro-Environment (TME)</li>
+    <li>Drive systemic dysregulation from cancer</li>
+</ul>
+
+<p>Exosomal release is a normal cellular function that is highly upregulated in cancer, releasing 10-to-100-fold elevated amounts of exosomes. The field of exosome research has produced abundant literature on these processes, and exosomes are increasingly recognized as central mediators in cancer formation, progression, metastasis, metabolic dysregulation, and resistance to both chemotherapies and checkpoint inhibitors.</p>
+
+<img src="tre-1.png" alt="Schematic of Vimentin's roles in exosomal biogenesis and release and impacts of ALD-R491" />
+
+<p>By targeting vimentin, ALD-R491 modulates the mechanics and transport of exosomes inside a tumor cell, an action that blocks packaging of payloads into exosomes as well as their trafficking across the cell and release through exocytosis.</p>
+
+<p>In <i>in vitro</i> studies, ALD-R491 reduces exosome release in multiple cell lines and has been shown to reduce the impact of vimentin in the epithelial-mesenchymal transition (EMT).</p>
+
+<p><i>In vivo</i> models must be based on syngeneic tumor models (grown, not implanted) to have intact immune systems that present the setting where immune response is redirected by uTRE communication, and the ALD-R491 effect can be observed.</p>
+
+<img src="tre-2.png" alt="Quantification of ALD-R491 effect on tumor-released exosomes" />
+
+<p>Literature shows that upregulated Tumor Released Exosomes (uTRE) enable resistance, direct and promote metastasis, deliver checkpoints systemically in a manner that escapes immunotherapy, and drive metabolic dysregulation that leads to cachexia. In <i>in vivo</i> data, ALD-R491 reduced signs of systemic disease in a 30-day model with an immediate benefit in health, a successful reduction in weight loss (anti-cachexia), and an increased survival of 50%.</p>
+
+<p>These actions may be present in a small cohort of compassionate use patients in China. In six end-stage cancer patients who had not responded to surgery or multiple other agents, ALD-R491 demonstrated a profile similar to <i>in vivo</i> evidence, with immediate response in general health, and anti-tumor and systemic disease benefits that increased the longer patients were on ALD-R491. This was not a formal clinical trial, and cannot be used to establish statistically significant efficacy or safety, but is suggestive of potential activity worthy of further exploration. In three of the six patients who were able to take ALD-R491 longer term, a similar correspondence to <i>in vivo</i> data was seen that included reduction in tumor size, number of metastatic loci, and other measures of systemic disease through physician clinical assessments (weight, immune blood panels, and cancer biomarkers). No adverse events led to a discontinuation in these compassionate use patients.</p>
+
+<div class="ea-box">
+    <div class="ea-box-title">Compassionate Use / FDA Expanded Access</div>
+    <p>ALD-R491 is now available for compassionate use in appropriate cases under physician direction through the FDA process for Expanded Access. For more information, please email us at <span class="ea-inline-wrapper"><button type="button" class="ea-inline-btn" id="eaCopyBtn" onclick="copyEmail(this)" aria-label="Copy Expanded Access Email Address"><span>EAforR491@aludapharm.com</span><svg class="icon-copy" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><span class="ea-tooltip" id="eaTooltip" role="status" aria-live="polite"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Copied!</span></span>.</p>
+</div>
+
+<script>
+var copyTimer = null;
+function copyEmail(button) {
+    var email = 'EAforR491@aludapharm.com';
+    var tooltip = document.getElementById('eaTooltip');
+    
+    function showAnimation() {
+        if (tooltip) {
+            tooltip.classList.add('show');
+            if (copyTimer) clearTimeout(copyTimer);
+            copyTimer = setTimeout(function() {
+                tooltip.classList.remove('show');
+            }, 2000);
+        }
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(showAnimation).catch(function() {
+            fallbackCopy(email);
+        });
+    } else {
+        fallbackCopy(email);
+    }
+
+    function fallbackCopy(text) {
+        var textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            showAnimation();
+        } catch (err) {
+            console.error('Copy failed', err);
+        }
+        document.body.removeChild(textArea);
+    }
+}
+</script>
+
+<h2>References</h2>
+
+<h3>Early papers on functions and forms of exosomes</h3>
+<ul>
+    <li>Shedding light on the cell biology of extracellular vesicles. <a href="https://pubmed.ncbi.nlm.nih.gov/29339798/" target="_blank">Nat Rev Mol Cell Bio 2018</a></li>
+    <li>Exosomes. <a href="https://pubmed.ncbi.nlm.nih.gov/31220978/" target="_blank">Annu Rev Biochem 2019</a></li>
+    <li>Exosomes: composition, biogenesis, and mechanisms in cancer metastasis and drug resistance. <a href="https://pubmed.ncbi.nlm.nih.gov/30940145/" target="_blank">Mol Cancer Rev 2019</a></li>
+    <li>The biology, function, and biomedical applications of exosomes. <a href="https://pubmed.ncbi.nlm.nih.gov/32029601/" target="_blank">Science 2020</a></li>
+</ul>
+
+<h3>Exosomes enable resistance (escape from existing drugs and defeat of immune surveillance)</h3>
+<ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/28806909/" target="_blank">Tumor-derived immunosuppressive exosomes are a potential therapeutic target to prevent T cell dysfunction and enhance anti-tumor immune responses. 2017</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/30925921/" target="_blank">Therapy resistance mediated by exosomes. 2019</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/25077924/" target="_blank">Exosomes mediate drug resistance transfer in MCF-7 breast cancer cells and a probable mechanism is delivery of P-glycoprotein. 2014</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/27157716/" target="_blank">Exosome-Mediated Metastasis: From EMT to Escape from Immunosurveillance. 2016</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/30003999/" target="_blank">Extracellular vesicles and anti-cancer drug resistance. 2018</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/27960084/" target="_blank">Extracellular Vesicles in Cancer: Cell-to-Cell Mediators of Metastasis. 2016</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/29073103/" target="_blank">Packaging and transfer of mitochondrial DNA via exosomes regulate escape from dormancy in hormonal therapy-resistant breast cancer. 2017</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/30951669/" target="_blank">Suppression of Exosomal PD-L1 Induces Systemic Anti-tumor Immunity and Memory. 2019</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/30089911/" target="_blank">Exosomal PD-L1 contributes to immunosuppression and is associated with anti-PD-1 response. 2018</a></li>
+</ul>
+
+<h3>Exosomes play a critical role in all systemic manifestations of cancer</h3>
+
+<p><b>...in directing cancer metastasis to specific organs</b></p>
+<ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/28215970/" target="_blank">The role of exosomes in cancer metastasis. 2017</a></li>
+    <li>Tumour exosome integrins determine organotropic metastasis. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4788391/" target="_blank">Nature. 2015</a></li>
+    <li>Multi-parametric atlas of the pre-metastatic liver for prediction of metastatic outcome in early-stage pancreatic cancer. <a href="https://www.nature.com/articles/s41591-024-03075-7" target="_blank">Nat Med. 2024</a></li>
+</ul>
+
+<p><b>...in enabling the delivery of pro-cancer payloads into other cells in a critical early mechanobiological step in metastasis</b></p>
+<ul>
+    <li>Systemic health impact of cancer-associated extracellular vesicles and particles. <a href="https://pubmed.ncbi.nlm.nih.gov/42386999/" target="_blank">Nature Rev Cancer 2026</a></li>
+</ul>
+
+<p><b>...in metabolic adaptation required for cancer cells to survive</b></p>
+<ul>
+    <li>Metabolic Plasticity as a Determinant of Tumor Growth and Metastasis. <a href="https://aacrjournals.org/cancerres/article/76/18/5201/613917/Metabolic-Plasticity-as-a-Determinant-of-Tumor?guestAccessKey=" target="_blank">AACR Cancer Res. 2016</a></li>
+    <li>Metabolic requirements of the metastatic cascade. <a href="https://www.sciencedirect.com/science/article/abs/pii/S2452310021000755?via%3Dihub" target="_blank">Curr Opin Syst Biol. 2021</a></li>
+</ul>
+
+<p><b>...in delivering inflammatory mediators that serve as potent inducers of EMT</b></p>
+<ul>
+    <li>Cancer-related inflammation, the seventh hallmark of cancer: links to genetic instability. <a href="https://academic.oup.com/carcin/article-abstract/30/7/1073/2477107?redirectedFrom=fulltext" target="_blank">Carcinogenesis. 2009</a></li>
+    <li>Inflammation-Induced Tumorigenesis and Metastasis. <a href="https://www.mdpi.com/1422-0067/22/11/5421" target="_blank">Int J Mol Sci. 2021</a></li>
+</ul>
+
+<h3>Recognition of the role of Vimentin across the tumor microenvironment</h3>
+<ul>
+    <li>Vimentin in the tumor microenvironment: orchestrating invasion, immunity, and metabolism. <a href="https://www.sciencedirect.com/science/article/pii/S0171933525000482?via%3Dihub" target="_blank">Eur J Cell Biol. 2025</a></li>
+    <li><i>Vimentin acts as a &ldquo;command center&rdquo; that communicates with the surrounding TME</i></li>
+    <li>Targeting vimentin to address metastasis and resistance. <a href="https://link.springer.com/article/10.1007/s10555-023-10154-7" target="_blank">Cancer and Mets. 2023</a></li>
+    <li>Pathways and Protein-Protein Interaction of Vimentin in Invasion: Review. <a href="https://journals.sagepub.com/doi/epdf/10.1089/cell.2022.0025?src=getftr&amp;utm_source=sciencedirect_contenthosting&amp;getft_integrator=sciencedirect_contenthosting" target="_blank">Cellular reprog 2022</a></li>
+    <li>Beyond genetics: driving cancer with the TME behind the wheel. <a href="https://www.nature.com/articles/s41568-023-00660-9" target="_blank">Nature Reviews Cancer 2024</a></li>
+    <li>Invasion and metastasis: insights and targets. <a href="https://www.nature.com/articles/s41392-025-02148-4" target="_blank">Signal Transd. Targeted Ther. 2025</a></li>
+</ul>
+		<p class = "pageurl">This document was printed from <a href="http://www.aludapharm.com/pipeline/cancer-signaling.html">http://www.aludapharm.com/pipeline/cancer-signaling.html</a></p>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class = "inner">
+      <span id = 'social-buttons'>
+        <a href = "https://twitter.com/aluda_pharm" target="_blank"><img src="/company/x.svg" alt="Aluda on X"></a>
+        <a href = "https://www.linkedin.com/company/aluda-pharmaceuticals-inc."  target="_blank"><img src="/company/linkedin.svg"alt="Aluda on LinkedIn"></a>
+      </span>
+			<b>Aluda Pharmaceuticals, Inc.</b><br/>
+			Tel: +1 (650) 260-5860</a><br/>
+			Email: <a href="mailto:info@aludapharm.com">info@aludapharm.com</a><br/><br/>
+			&copy; Aluda Pharmaceuticals, Inc.  All rights reserved.
+		</div>
+	</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136955566-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136955566-1');
+</script>
+</body>
+</html>
